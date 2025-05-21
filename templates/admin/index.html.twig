@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Panel Administratora{% endblock %}
+
+{% block body %}
+    <h1>Witaj, {{ user.name }}!</h1>
+    <p>To jest panel administratora.</p>
+
+    <ul>
+        <li><a href="#">Zarządzaj artykułami</a></li>
+        <li><a href="#">Zarządzaj kategoriami</a></li>
+        <li><a href="{{ path('app_logout') }}">Wyloguj się</a></li>
+    </ul>
+{% endblock %}
