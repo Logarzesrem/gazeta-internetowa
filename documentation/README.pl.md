@@ -15,7 +15,7 @@
 ### Automatyczna Instalacja
 ```bash
 # Sklonuj repozytorium
-git clone <url-repozytorium>
+git clone https://github.com/Logarzesrem/gazeta-internetowa
 cd gazeta-internetowa
 
 # Uruchom automatyczny skrypt instalacyjny

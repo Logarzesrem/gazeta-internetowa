@@ -15,7 +15,7 @@
 ### Automated Setup
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/Logarzesrem/gazeta-internetowa
 cd gazeta-internetowa
 
 # Run the automated setup script
