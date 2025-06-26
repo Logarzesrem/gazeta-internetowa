@@ -8,7 +8,7 @@ Docker & Docker Compose
 
 # Instalacja z Dockerem
 ## Automatyczna Instalacja
-    git clone (https://github.com/Logarzesrem/gazeta-internetowa)
+    git clone https://github.com/Logarzesrem/gazeta-internetowa
     cd gazeta-internetowa
     ./setup-docker.sh
 
