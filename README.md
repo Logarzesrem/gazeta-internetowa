@@ -7,12 +7,12 @@ MySQL: 8.0 lub wyższy
 Docker & Docker Compose
 
 # Instalacja z Dockerem
-# Automatyczna Instalacja
+## Automatyczna Instalacja
     git clone <url-repozytorium>
     cd gazeta-internetowa
     ./setup-docker.sh
 
-# Ręczna Instalacja Docker
+## Ręczna Instalacja Docker
     docker-compose up -d
     docker exec symfony_app composer install
 
