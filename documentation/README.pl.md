@@ -7,6 +7,37 @@
 - **MySQL:** 8.0 lub wyższy
 - **Docker & Docker Compose**
 
+## Docker Quick Start
+
+### Wymagania Wstępne
+- Zainstalowany Docker i Docker Compose
+
+### Automatyczna Instalacja
+```bash
+# Sklonuj repozytorium
+git clone <url-repozytorium>
+cd gazeta-internetowa
+
+# Uruchom automatyczny skrypt instalacyjny
+./setup-docker.sh
+```
+
+### Ręczna Instalacja Docker
+```bash
+# Uruchom kontenery
+docker-compose up -d
+
+# Zainstaluj zależności
+docker exec symfony_app composer install
+
+# Dostęp do aplikacji pod adresem http://localhost:8000
+```
+
+### Dostęp do Docker
+- **Aplikacja Web:** http://localhost:8000
+- **Baza Danych:** localhost:3306
+- **Powłoka Kontenera:** `docker exec -it symfony_app bash`
+
 ## Instalacja
 
 ### Krok 1: Sklonuj Repozytorium
@@ -19,6 +50,8 @@ cd gazeta-internetowa
 ```bash
 composer install
 ```
+
+**Uwaga:** Katalog `vendor/` nie jest dołączony do repozytorium. Zawsze uruchom `composer install` po sklonowaniu, aby wygenerować wymagane pliki autoload.
 
 ### Krok 3: Konfiguracja Bazy Danych
 ```bash
