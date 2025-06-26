@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'admin.login'|trans({}, 'admin') }}{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-center mb-0">{{ 'admin.login'|trans({}, 'admin') }}</h2>
+                </div>
+                <div class="card-body">
+                    {% if error %}
+                        <div class="alert alert-danger">
+                            {{ error.messageKey|trans(error.messageData, 'security') }}
+                        </div>
+                    {% endif %}
+
+                    {{ form_start(form) }}
+                        {{ form_row(form.email) }}
+                        {{ form_row(form.password) }}
+                        {{ form_row(form._remember_me) }}
+
+                        <div class="d-grid">
+                            <button class="btn btn-primary" type="submit">{{ 'admin.login'|trans({}, 'admin') }}</button>
+                        </div>
+                    {{ form_end(form) }}
+
+                    <div class="text-center mt-3">
+                        <p class="mb-0">{{ 'admin.no_account'|trans({}, 'admin') }} <a href="{{ path('app_user_register') }}">{{ 'admin.register_here'|trans({}, 'admin') }}</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

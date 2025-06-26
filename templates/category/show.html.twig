@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ category.name }}{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <h1>{{ category.name }}</h1>
+    <p>Slug: {{ category.slug }}</p>
+    <p>Number of articles: {{ articles|length }}</p>
+    <a href="{{ path('app_category_index') }}" class="btn btn-secondary">Back to categories</a>
+</div>
+{% endblock %} 

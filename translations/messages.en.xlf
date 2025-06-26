@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="navbar.brand">
+                <source>navbar.brand</source>
+                <target>Gazeta Internetowa</target>
+            </trans-unit>
+            <trans-unit id="navbar.articles">
+                <source>navbar.articles</source>
+                <target>Articles</target>
+            </trans-unit>
+            <trans-unit id="navbar.categories">
+                <source>navbar.categories</source>
+                <target>Categories</target>
+            </trans-unit>
+            <trans-unit id="navbar.new_article">
+                <source>navbar.new_article</source>
+                <target>New Article</target>
+            </trans-unit>
+            <trans-unit id="navbar.new_category">
+                <source>navbar.new_category</source>
+                <target>New Category</target>
+            </trans-unit>
+            <trans-unit id="navbar.logout">
+                <source>navbar.logout</source>
+                <target>Logout</target>
+            </trans-unit>
+            <trans-unit id="navbar.login">
+                <source>navbar.login</source>
+                <target>Login</target>
+            </trans-unit>
+            <trans-unit id="article.title.list">
+                <source>article.title.list</source>
+                <target>Articles</target>
+            </trans-unit>
+            <trans-unit id="article.sort.by">
+                <source>article.sort.by</source>
+                <target>Sort by</target>
+            </trans-unit>
+            <trans-unit id="article.sort.date">
+                <source>article.sort.date</source>
+                <target>Date</target>
+            </trans-unit>
+            <trans-unit id="article.sort.title">
+                <source>article.sort.title</source>
+                <target>Title</target>
+            </trans-unit>
+            <trans-unit id="article.by">
+                <source>article.by</source>
+                <target>By</target>
+            </trans-unit>
+            <trans-unit id="article.in">
+                <source>article.in</source>
+                <target>in</target>
+            </trans-unit>
+            <trans-unit id="article.on">
+                <source>article.on</source>
+                <target>on</target>
+            </trans-unit>
+            <trans-unit id="article.read_more">
+                <source>article.read_more</source>
+                <target>Read more</target>
+            </trans-unit>
+            <trans-unit id="article.no_articles">
+                <source>article.no_articles</source>
+                <target>No articles found.</target>
+            </trans-unit>
+            <trans-unit id="article.no_articles_in_category">
+                <source>article.no_articles_in_category</source>
+                <target>No articles found in this category.</target>
+            </trans-unit>
+            <trans-unit id="article.no_categories">
+                <source>article.no_categories</source>
+                <target>No categories</target>
+            </trans-unit>
+            <trans-unit id="article.edit">
+                <source>article.edit</source>
+                <target>Edit</target>
+            </trans-unit>
+            <trans-unit id="article.delete">
+                <source>article.delete</source>
+                <target>Delete</target>
+            </trans-unit>
+            <trans-unit id="comment.title">
+                <source>comment.title</source>
+                <target>Comments</target>
+            </trans-unit>
+            <trans-unit id="comment.no_comments">
+                <source>comment.no_comments</source>
+                <target>No comments yet.</target>
+            </trans-unit>
+            <trans-unit id="comment.add">
+                <source>comment.add</source>
+                <target>Add a Comment</target>
+            </trans-unit>
+            <trans-unit id="comment.submit">
+                <source>comment.submit</source>
+                <target>Submit</target>
+            </trans-unit>
+            <trans-unit id="comment.login_required">
+                <source>comment.login_required</source>
+                <target>You need to be logged in to add comments.</target>
+            </trans-unit>
+            <trans-unit id="navbar.register">
+                <source>navbar.register</source>
+                <target>Register</target>
+            </trans-unit>
+            <trans-unit id="category.title.list">
+                <source>category.title.list</source>
+                <target>Categories</target>
+            </trans-unit>
+            <trans-unit id="pagination.navigation">
+                <source>pagination.navigation</source>
+                <target>Page navigation</target>
+            </trans-unit>
+            <trans-unit id="article.new.title">
+                <source>article.new.title</source>
+                <target>New Article</target>
+            </trans-unit>
+            <trans-unit id="article.title">
+                <source>article.title</source>
+                <target>Title</target>
+            </trans-unit>
+            <trans-unit id="article.title.placeholder">
+                <source>article.title.placeholder</source>
+                <target>Enter article title</target>
+            </trans-unit>
+            <trans-unit id="article.content">
+                <source>article.content</source>
+                <target>Content</target>
+            </trans-unit>
+            <trans-unit id="article.content.placeholder">
+                <source>article.content.placeholder</source>
+                <target>Enter article content</target>
+            </trans-unit>
+            <trans-unit id="article.categories">
+                <source>article.categories</source>
+                <target>Categories</target>
+            </trans-unit>
+            <trans-unit id="article.create">
+                <source>article.create</source>
+                <target>Create</target>
+            </trans-unit>
+            <trans-unit id="article.back_to_list">
+                <source>article.back_to_list</source>
+                <target>Back to list</target>
+            </trans-unit>
+            <trans-unit id="user.profile">
+                <source>user.profile</source>
+                <target>My Profile</target>
+            </trans-unit>
+            <trans-unit id="user.edit_profile">
+                <source>user.edit_profile</source>
+                <target>Edit profile</target>
+            </trans-unit>
+            <trans-unit id="user.change_password">
+                <source>user.change_password</source>
+                <target>Change password</target>
+            </trans-unit>
+            <trans-unit id="user.username">
+                <source>user.username</source>
+                <target>Username</target>
+            </trans-unit>
+            <trans-unit id="user.full_name">
+                <source>user.full_name</source>
+                <target>Full Name</target>
+            </trans-unit>
+            <trans-unit id="user.email">
+                <source>user.email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="user.member_since">
+                <source>user.member_since</source>
+                <target>Member Since</target>
+            </trans-unit>
+            <trans-unit id="user.last_login">
+                <source>user.last_login</source>
+                <target>Last Login</target>
+            </trans-unit>
+            <trans-unit id="user.bio">
+                <source>user.bio</source>
+                <target>Bio</target>
+            </trans-unit>
+            <trans-unit id="user.activity">
+                <source>user.activity</source>
+                <target>My Activity</target>
+            </trans-unit>
+            <trans-unit id="user.comments">
+                <source>user.comments</source>
+                <target>Comments</target>
+            </trans-unit>
+            <trans-unit id="user.status">
+                <source>user.status</source>
+                <target>Status</target>
+            </trans-unit>
+            <trans-unit id="user.active">
+                <source>user.active</source>
+                <target>Active</target>
+            </trans-unit>
+            <trans-unit id="user.inactive">
+                <source>user.inactive</source>
+                <target>Inactive</target>
+            </trans-unit>
+            <trans-unit id="user.save_changes">
+                <source>user.save_changes</source>
+                <target>Save Changes</target>
+            </trans-unit>
+            <trans-unit id="action.cancel">
+                <source>action.cancel</source>
+                <target>Cancel</target>
+            </trans-unit>
+            <trans-unit id="user.username.placeholder">
+                <source>user.username.placeholder</source>
+                <target>Enter your username</target>
+            </trans-unit>
+            <trans-unit id="user.username.help">
+                <source>user.username.help</source>
+                <target>Username must be 3-50 characters long and contain only letters, numbers, and underscores.</target>
+            </trans-unit>
+            <trans-unit id="user.email.placeholder">
+                <source>user.email.placeholder</source>
+                <target>Enter your email address</target>
+            </trans-unit>
+            <trans-unit id="user.full_name.placeholder">
+                <source>user.full_name.placeholder</source>
+                <target>Enter your full name</target>
+            </trans-unit>
+            <trans-unit id="user.bio.placeholder">
+                <source>user.bio.placeholder</source>
+                <target>Tell us about yourself...</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff> 

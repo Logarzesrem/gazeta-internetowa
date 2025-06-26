@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'home.title'|trans({}, 'admin') }}{% endblock %}
+
+{% block body %}
+    <div class="jumbotron">
+        <h1 class="display-4">{{ 'home.welcome'|trans({}, 'admin') }}</h1>
+        <p class="lead">{{ 'home.subtitle'|trans({}, 'admin') }}</p>
+        <hr class="my-4">
+        <p>{{ 'home.login_message'|trans({}, 'admin') }}</p>
+        <a class="btn btn-primary btn-lg" href="{{ path('app_user_login') }}" role="button">{{ 'home.login'|trans({}, 'admin') }}</a>
+    </div>
+{% endblock %}

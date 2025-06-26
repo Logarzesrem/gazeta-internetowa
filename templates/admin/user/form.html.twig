@@ -1,0 +1,117 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title|trans }}{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card border-primary">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h1 class="h3 mb-0">
+                        <i class="bi bi-shield-lock"></i> {{ title|trans }}
+                    </h1>
+                    <a href="{{ path('admin_dashboard') }}" class="btn btn-outline-light btn-sm">
+                        <i class="bi bi-arrow-left"></i> Back to Admin Panel
+                    </a>
+                </div>
+                <div class="card-body">
+                    {% if user is defined %}
+                        <div class="alert alert-info">
+                            <i class="bi bi-info-circle"></i>
+                            <strong>Editing Admin Account:</strong> {{ user.name }} ({{ user.email }})
+                        </div>
+                    {% endif %}
+
+                    {{ form_start(form) }}
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card mb-3">
+                                    <div class="card-header bg-light">
+                                        <h5 class="mb-0">
+                                            <i class="bi bi-person"></i> Admin Profile Information
+                                        </h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                {{ form_row(form.name, {
+                                                    'attr': {
+                                                        'placeholder': 'Enter admin full name',
+                                                        'class': 'form-control'
+                                                    },
+                                                    'label_attr': {
+                                                        'class': 'form-label fw-bold'
+                                                    }
+                                                }) }}
+                                            </div>
+                                            <div class="col-md-6">
+                                                {{ form_row(form.email, {
+                                                    'attr': {
+                                                        'placeholder': 'admin@example.com',
+                                                        'class': 'form-control'
+                                                    },
+                                                    'label_attr': {
+                                                        'class': 'form-label fw-bold'
+                                                    }
+                                                }) }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {% if form.plainPassword is defined %}
+                                <div class="col-12">
+                                    <div class="card mb-3 border-warning">
+                                        <div class="card-header bg-warning text-dark">
+                                            <h5 class="mb-0">
+                                                <i class="bi bi-key-fill"></i> Password Management
+                                            </h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="alert alert-warning">
+                                                <i class="bi bi-exclamation-triangle"></i>
+                                                <strong>Password Requirements:</strong>
+                                                <ul class="mb-0 mt-2">
+                                                    <li>Minimum 8 characters long</li>
+                                                    <li>Must contain at least one letter and one number</li>
+                                                    <li>Can include special characters: @$!%*?&</li>
+                                                </ul>
+                                            </div>
+                                            {{ form_row(form.plainPassword, {
+                                                'attr': {
+                                                    'placeholder': 'Enter new password',
+                                                    'class': 'form-control',
+                                                    'autocomplete': 'new-password'
+                                                },
+                                                'label_attr': {
+                                                    'class': 'form-label fw-bold'
+                                                }
+                                            }) }}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="bi bi-save"></i> 
+                                {% if form.plainPassword is defined %}
+                                    Update Admin Account
+                                {% else %}
+                                    Save Changes
+                                {% endif %}
+                            </button>
+                            <a href="{{ path('admin_dashboard') }}" class="btn btn-outline-secondary">
+                                <i class="bi bi-x-circle"></i> Cancel
+                            </a>
+                        </div>
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

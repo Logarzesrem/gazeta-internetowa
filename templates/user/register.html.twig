@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'user.register'|trans({}, 'admin') }}{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-center mb-0">{{ 'user.create_account'|trans({}, 'admin') }}</h2>
+                </div>
+                <div class="card-body">
+                    {{ form_start(form) }}
+                        <div class="mb-3">
+                            {{ form_label(form.username) }}
+                            {{ form_widget(form.username) }}
+                            {{ form_errors(form.username) }}
+                            {% if form.username.vars.help is defined %}
+                                <div class="form-text">{{ form.username.vars.help }}</div>
+                            {% endif %}
+                        </div>
+
+                        <div class="mb-3">
+                            {{ form_label(form.email) }}
+                            {{ form_widget(form.email) }}
+                            {{ form_errors(form.email) }}
+                        </div>
+
+                        <div class="mb-3">
+                            {{ form_label(form.name) }}
+                            {{ form_widget(form.name) }}
+                            {{ form_errors(form.name) }}
+                        </div>
+
+                        <div class="mb-3">
+                            {{ form_label(form.plainPassword.first) }}
+                            {{ form_widget(form.plainPassword.first) }}
+                            {{ form_errors(form.plainPassword.first) }}
+                            {% if form.plainPassword.first.vars.help is defined %}
+                                <div class="form-text">{{ form.plainPassword.first.vars.help }}</div>
+                            {% endif %}
+                        </div>
+
+                        <div class="mb-3">
+                            {{ form_label(form.plainPassword.second) }}
+                            {{ form_widget(form.plainPassword.second) }}
+                            {{ form_errors(form.plainPassword.second) }}
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">{{ 'user.register'|trans({}, 'admin') }}</button>
+                        </div>
+                    {{ form_end(form) }}
+
+                    <div class="text-center mt-3">
+                        <p class="mb-0">{{ 'user.already_have_account'|trans({}, 'admin') }} <a href="{{ path('app_user_login') }}">{{ 'user.login_here'|trans({}, 'admin') }}</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

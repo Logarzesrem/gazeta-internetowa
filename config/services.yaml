@@ -20,5 +20,18 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
 
+    # Service interface bindings for SOLID principles
+    App\Service\Interface\UserServiceInterface:
+        alias: App\Service\UserService
+
+    App\Service\Interface\ArticleServiceInterface:
+        alias: App\Service\ArticleService
+
+    App\Service\Interface\AuthenticationServiceInterface:
+        alias: App\Service\AuthenticationService
+
+    App\Service\Interface\CommentServiceInterface:
+        alias: App\Service\CommentService
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

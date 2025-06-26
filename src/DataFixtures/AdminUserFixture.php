@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\DataFixtures;
 
 use App\Entity\AdminUser;
@@ -7,26 +9,28 @@ use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
+/**
+ * Fixture for creating the default admin user.
+ */
 class AdminUserFixture extends Fixture
 {
-    private UserPasswordHasherInterface $passwordHasher;
-
-    public function __construct(UserPasswordHasherInterface $passwordHasher)
-    {
-        $this->passwordHasher = $passwordHasher;
+    public function __construct(
+        private UserPasswordHasherInterface $passwordHasher,
+    ) {
     }
 
     public function load(ObjectManager $manager): void
     {
-        $admin = new AdminUser();
-        $admin->setEmail('admin@example.com');
-        $admin->setName('Administrator');
-        $admin->setRoles(['ROLE_ADMIN']);
-        $admin->setPassword(
-            $this->passwordHasher->hashPassword($admin, 'admin123')
-        );
+        // Clear existing admin users
+        $manager->createQuery('DELETE FROM App\Entity\AdminUser')->execute();
 
-        $manager->persist($admin);
+        $adminUser = new AdminUser();
+        $adminUser->setEmail('admin@example.com');
+        $adminUser->setName('Admin User');
+        $adminUser->setPassword($this->passwordHasher->hashPassword($adminUser, 'admin123'));
+        $adminUser->setRoles(['ROLE_ADMIN']);
+        $manager->persist($adminUser);
+
         $manager->flush();
     }
 }

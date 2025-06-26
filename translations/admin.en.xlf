@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="en">
+    <file id="admin.en">
+        <unit id="form.email">
+            <segment>
+                <source>admin.form.email</source>
+                <target>Email address</target>
+            </segment>
+        </unit>
+        <unit id="form.email_placeholder">
+            <segment>
+                <source>admin.form.email_placeholder</source>
+                <target>Enter email address</target>
+            </segment>
+        </unit>
+        <unit id="form.name">
+            <segment>
+                <source>admin.form.name</source>
+                <target>Name</target>
+            </segment>
+        </unit>
+        <unit id="form.name_placeholder">
+            <segment>
+                <source>admin.form.name_placeholder</source>
+                <target>Enter full name</target>
+            </segment>
+        </unit>
+        <unit id="form.password">
+            <segment>
+                <source>admin.form.password</source>
+                <target>Password</target>
+            </segment>
+        </unit>
+        <unit id="form.password_placeholder">
+            <segment>
+                <source>admin.form.password_placeholder</source>
+                <target>Enter password</target>
+            </segment>
+        </unit>
+        <unit id="form.password_repeat">
+            <segment>
+                <source>admin.form.password_repeat</source>
+                <target>Repeat password</target>
+            </segment>
+        </unit>
+        <unit id="form.password_repeat_placeholder">
+            <segment>
+                <source>admin.form.password_repeat_placeholder</source>
+                <target>Enter password again</target>
+            </segment>
+        </unit>
+        <unit id="validation.email.already_used">
+            <segment>
+                <source>validation.email.already_used</source>
+                <target>This email is already in use</target>
+            </segment>
+        </unit>
+        <unit id="validation.email.not_blank">
+            <segment>
+                <source>validation.email.not_blank</source>
+                <target>Please enter an email address</target>
+            </segment>
+        </unit>
+        <unit id="validation.email.invalid">
+            <segment>
+                <source>validation.email.invalid</source>
+                <target>Please enter a valid email address</target>
+            </segment>
+        </unit>
+        <unit id="validation.email.too_long">
+            <segment>
+                <source>validation.email.too_long</source>
+                <target>Email address is too long</target>
+            </segment>
+        </unit>
+        <unit id="validation.password.not_blank">
+            <segment>
+                <source>validation.password.not_blank</source>
+                <target>Please enter a password</target>
+            </segment>
+        </unit>
+        <unit id="validation.password.too_short">
+            <segment>
+                <source>validation.password.too_short</source>
+                <target>Password must be at least {{ limit }} characters long</target>
+            </segment>
+        </unit>
+        <unit id="validation.password.too_long">
+            <segment>
+                <source>validation.password.too_long</source>
+                <target>Password cannot be longer than {{ limit }} characters</target>
+            </segment>
+        </unit>
+        <unit id="validation.password.requirements">
+            <segment>
+                <source>validation.password.requirements</source>
+                <target>Password must contain at least one letter and one number</target>
+            </segment>
+        </unit>
+        <unit id="validation.password.mismatch">
+            <segment>
+                <source>validation.password.mismatch</source>
+                <target>The passwords do not match</target>
+            </segment>
+        </unit>
+        <unit id="validation.name.not_blank">
+            <segment>
+                <source>validation.name.not_blank</source>
+                <target>Please enter a name</target>
+            </segment>
+        </unit>
+        <unit id="validation.name.too_short">
+            <segment>
+                <source>validation.name.too_short</source>
+                <target>Name must be at least {{ limit }} characters long</target>
+            </segment>
+        </unit>
+        <unit id="validation.name.too_long">
+            <segment>
+                <source>validation.name.too_long</source>
+                <target>Name cannot be longer than {{ limit }} characters</target>
+            </segment>
+        </unit>
+        <unit id="user.register">
+            <segment>
+                <source>user.register</source>
+                <target>Register</target>
+            </segment>
+        </unit>
+        <unit id="user.create_account">
+            <segment>
+                <source>user.create_account</source>
+                <target>Create Account</target>
+            </segment>
+        </unit>
+        <unit id="user.already_have_account">
+            <segment>
+                <source>user.already_have_account</source>
+                <target>Already have an account?</target>
+            </segment>
+        </unit>
+        <unit id="user.login_here">
+            <segment>
+                <source>user.login_here</source>
+                <target>Login here</target>
+            </segment>
+        </unit>
+        <unit id="category.new">
+            <segment>
+                <source>category.new</source>
+                <target>New Category</target>
+            </segment>
+        </unit>
+        <unit id="category.create_new">
+            <segment>
+                <source>category.create_new</source>
+                <target>Create New Category</target>
+            </segment>
+        </unit>
+        <unit id="category.create">
+            <segment>
+                <source>category.create</source>
+                <target>Create</target>
+            </segment>
+        </unit>
+        <unit id="category.back_to_list">
+            <segment>
+                <source>category.back_to_list</source>
+                <target>Back to list</target>
+            </segment>
+        </unit>
+        <unit id="home.title">
+            <segment>
+                <source>home.title</source>
+                <target>Home</target>
+            </segment>
+        </unit>
+        <unit id="home.welcome">
+            <segment>
+                <source>home.welcome</source>
+                <target>Welcome to Gazeta Internetowa</target>
+            </segment>
+        </unit>
+        <unit id="home.subtitle">
+            <segment>
+                <source>home.subtitle</source>
+                <target>Your source for news and information.</target>
+            </segment>
+        </unit>
+        <unit id="home.login_message">
+            <segment>
+                <source>home.login_message</source>
+                <target>Please log in to access the admin panel.</target>
+            </segment>
+        </unit>
+        <unit id="home.login">
+            <segment>
+                <source>home.login</source>
+                <target>Login</target>
+            </segment>
+        </unit>
+        <unit id="admin.title.dashboard">
+            <segment>
+                <source>admin.title.dashboard</source>
+                <target>Admin Dashboard</target>
+            </segment>
+        </unit>
+        <unit id="admin.panel">
+            <segment>
+                <source>admin.panel</source>
+                <target>Admin Panel</target>
+            </segment>
+        </unit>
+        <unit id="admin.manage_regular_users">
+            <segment>
+                <source>admin.manage_regular_users</source>
+                <target>Manage Regular Users</target>
+            </segment>
+        </unit>
+        <unit id="admin.add_new_admin">
+            <segment>
+                <source>admin.add_new_admin</source>
+                <target>Add New Admin</target>
+            </segment>
+        </unit>
+        <unit id="admin.edit_profile">
+            <segment>
+                <source>admin.edit_profile</source>
+                <target>Edit Profile</target>
+            </segment>
+        </unit>
+        <unit id="admin.change_password">
+            <segment>
+                <source>admin.change_password</source>
+                <target>Change Password</target>
+            </segment>
+        </unit>
+        <unit id="admin.account_management">
+            <segment>
+                <source>admin.account_management</source>
+                <target>Admin Account Management</target>
+            </segment>
+        </unit>
+        <unit id="admin.name">
+            <segment>
+                <source>admin.name</source>
+                <target>Admin Name</target>
+            </segment>
+        </unit>
+        <unit id="admin.email_address">
+            <segment>
+                <source>admin.email_address</source>
+                <target>Email Address</target>
+            </segment>
+        </unit>
+        <unit id="admin.roles">
+            <segment>
+                <source>admin.roles</source>
+                <target>Admin Roles</target>
+            </segment>
+        </unit>
+        <unit id="admin.login">
+            <segment>
+                <source>admin.login</source>
+                <target>Login</target>
+            </segment>
+        </unit>
+        <unit id="admin.no_account">
+            <segment>
+                <source>admin.no_account</source>
+                <target>Don't have an account?</target>
+            </segment>
+        </unit>
+        <unit id="admin.register_here">
+            <segment>
+                <source>admin.register_here</source>
+                <target>Register here</target>
+            </segment>
+        </unit>
+    </file>
+</xliff> 
