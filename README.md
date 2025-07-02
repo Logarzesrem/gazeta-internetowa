@@ -29,40 +29,6 @@ docker exec symfony_app php bin/console doctrine:fixtures:load --no-interaction
 **Aplikacja dostępna pod adresem:** http://localhost:8000  
 **Baza danych:** localhost:3306
 
-## Instalacja Lokalna (bez Dockera)
-
-### Sklonuj repozytorium:
-```bash
-git clone https://github.com/Logarzesrem/gazeta-internetowa
-cd gazeta-internetowa
-```
-
-### Zainstaluj zależności:
-```bash
-composer install
-```
-
-> **Katalog vendor/ nie jest dołączony** – uruchom `composer install` po sklonowaniu.
-
-### Skonfiguruj bazę danych:
-```bash
-php bin/console doctrine:database:create
-php bin/console doctrine:migrations:migrate
-php bin/console doctrine:fixtures:load --no-interaction
-```
-
-### Uruchom aplikację:
-
-**Symfony CLI:**
-```bash
-symfony server:start
-```
-
-**Lub wbudowany serwer PHP:**
-```bash
-php -S localhost:8000 -t public/
-```
-
 ## Domyślni Użytkownicy (po załadowaniu fixtures)
 
 ### Administrator:
