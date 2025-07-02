@@ -14,6 +14,7 @@
 git clone https://github.com/Logarzesrem/gazeta-internetowa
 cd gazeta-internetowa
 docker-compose up -d
+docker exec symfony_app composer install
 docker exec symfony_app ./setup.sh
 ```
 
