@@ -1,0 +1,27 @@
+#!/usr/bin/env php
+<?php
+
+if (!is_dir(dirname(__DIR__).'/vendor')) {
+    throw new LogicException('Dependencies are missing. Try running "composer install".');
+}
+
+require_once dirname(__DIR__).'/vendor/autoload.php';
+
+// Get the PHPUnit binary path
+$phpunitPath = dirname(__DIR__).'/vendor/bin/phpunit';
+
+// Check if PHPUnit exists
+if (!file_exists($phpunitPath)) {
+    throw new LogicException('PHPUnit is not installed. Try running "composer install".');
+}
+
+// Pass all arguments to the actual PHPUnit binary
+$args = array_slice($argv, 1);
+$command = escapeshellarg($phpunitPath);
+if (!empty($args)) {
+    $command .= ' ' . implode(' ', array_map('escapeshellarg', $args));
+}
+
+// Execute PHPUnit
+passthru($command, $exitCode);
+exit($exitCode); 
