@@ -2,7 +2,7 @@
 framework:
     secret: '%env(APP_SECRET)%'
     annotations: false
-    http_method_override: false
+    http_method_override: true
     handle_all_throwables: true
 
     # Enables session support. Note that the session will ONLY be started if you read or write from it.
@@ -11,6 +11,13 @@ framework:
         handler_id: null
         cookie_secure: auto
         cookie_samesite: lax
+
+    # Configure Intl for proper date localization
+    default_locale: en
+    translator:
+        default_path: '%kernel.project_dir%/translations'
+        fallbacks:
+            - en
 
     #esi: true
     #fragments: true

@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="pl">
+    <file id="admin.pl">
+        <unit id="form.email">
+            <segment>
+                <source>admin.form.email</source>
+                <target>Adres email</target>
+            </segment>
+        </unit>
+        <unit id="form.email_placeholder">
+            <segment>
+                <source>admin.form.email_placeholder</source>
+                <target>Wprowadź adres email</target>
+            </segment>
+        </unit>
+        <unit id="form.name">
+            <segment>
+                <source>admin.form.name</source>
+                <target>Imię i nazwisko</target>
+            </segment>
+        </unit>
+        <unit id="form.name_placeholder">
+            <segment>
+                <source>admin.form.name_placeholder</source>
+                <target>Wprowadź imię i nazwisko</target>
+            </segment>
+        </unit>
+        <unit id="form.password">
+            <segment>
+                <source>admin.form.password</source>
+                <target>Hasło</target>
+            </segment>
+        </unit>
+        <unit id="form.password_placeholder">
+            <segment>
+                <source>admin.form.password_placeholder</source>
+                <target>Wprowadź hasło</target>
+            </segment>
+        </unit>
+        <unit id="form.password_repeat">
+            <segment>
+                <source>admin.form.password_repeat</source>
+                <target>Powtórz hasło</target>
+            </segment>
+        </unit>
+        <unit id="form.password_repeat_placeholder">
+            <segment>
+                <source>admin.form.password_repeat_placeholder</source>
+                <target>Wprowadź hasło ponownie</target>
+            </segment>
+        </unit>
+        <unit id="validation.email.already_used">
+            <segment>
+                <source>validation.email.already_used</source>
+                <target>Ten adres email jest już używany</target>
+            </segment>
+        </unit>
+        <unit id="validation.email.not_blank">
+            <segment>
+                <source>validation.email.not_blank</source>
+                <target>Proszę wprowadzić adres email</target>
+            </segment>
+        </unit>
+        <unit id="validation.email.invalid">
+            <segment>
+                <source>validation.email.invalid</source>
+                <target>Proszę wprowadzić prawidłowy adres email</target>
+            </segment>
+        </unit>
+        <unit id="validation.email.too_long">
+            <segment>
+                <source>validation.email.too_long</source>
+                <target>Adres email jest za długi</target>
+            </segment>
+        </unit>
+        <unit id="validation.password.not_blank">
+            <segment>
+                <source>validation.password.not_blank</source>
+                <target>Proszę wprowadzić hasło</target>
+            </segment>
+        </unit>
+        <unit id="validation.password.too_short">
+            <segment>
+                <source>validation.password.too_short</source>
+                <target>Hasło musi mieć co najmniej {{ limit }} znaków</target>
+            </segment>
+        </unit>
+        <unit id="validation.password.too_long">
+            <segment>
+                <source>validation.password.too_long</source>
+                <target>Hasło nie może być dłuższe niż {{ limit }} znaków</target>
+            </segment>
+        </unit>
+        <unit id="validation.password.requirements">
+            <segment>
+                <source>validation.password.requirements</source>
+                <target>Hasło musi zawierać co najmniej jedną literę i jedną cyfrę</target>
+            </segment>
+        </unit>
+        <unit id="validation.password.mismatch">
+            <segment>
+                <source>validation.password.mismatch</source>
+                <target>Hasła nie są identyczne</target>
+            </segment>
+        </unit>
+        <unit id="validation.name.not_blank">
+            <segment>
+                <source>validation.name.not_blank</source>
+                <target>Proszę wprowadzić imię i nazwisko</target>
+            </segment>
+        </unit>
+        <unit id="validation.name.too_short">
+            <segment>
+                <source>validation.name.too_short</source>
+                <target>Imię i nazwisko musi mieć co najmniej {{ limit }} znaki</target>
+            </segment>
+        </unit>
+        <unit id="validation.name.too_long">
+            <segment>
+                <source>validation.name.too_long</source>
+                <target>Imię i nazwisko nie może być dłuższe niż {{ limit }} znaków</target>
+            </segment>
+        </unit>
+        <unit id="user.view">
+            <segment>
+                <source>user.view</source>
+                <target>Podgląd użytkownika</target>
+            </segment>
+        </unit>
+        <unit id="user.edit">
+            <segment>
+                <source>user.edit</source>
+                <target>Edytuj użytkownika</target>
+            </segment>
+        </unit>
+        <unit id="user.activate">
+            <segment>
+                <source>user.activate</source>
+                <target>Aktywuj użytkownika</target>
+            </segment>
+        </unit>
+        <unit id="user.deactivate">
+            <segment>
+                <source>user.deactivate</source>
+                <target>Dezaktywuj użytkownika</target>
+            </segment>
+        </unit>
+        <unit id="user.delete">
+            <segment>
+                <source>user.delete</source>
+                <target>Usuń użytkownika</target>
+            </segment>
+        </unit>
+        <unit id="user.activated_success">
+            <segment>
+                <source>user.activated_success</source>
+                <target>Użytkownik został pomyślnie aktywowany.</target>
+            </segment>
+        </unit>
+        <unit id="user.deactivated_success">
+            <segment>
+                <source>user.deactivated_success</source>
+                <target>Użytkownik został pomyślnie dezaktywowany.</target>
+            </segment>
+        </unit>
+        <unit id="user.deleted_success">
+            <segment>
+                <source>user.deleted_success</source>
+                <target>Użytkownik został pomyślnie usunięty.</target>
+            </segment>
+        </unit>
+        <unit id="user.updated_success">
+            <segment>
+                <source>user.updated_success</source>
+                <target>Użytkownik został pomyślnie zaktualizowany.</target>
+            </segment>
+        </unit>
+        <unit id="user.delete_confirm">
+            <segment>
+                <source>user.delete_confirm</source>
+                <target>Czy na pewno chcesz usunąć tego użytkownika?</target>
+            </segment>
+        </unit>
+        <unit id="user.back_to_list">
+            <segment>
+                <source>user.back_to_list</source>
+                <target>Powrót do listy użytkowników</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.manage">
+            <segment>
+                <source>admin.users.manage</source>
+                <target>Zarządzaj użytkownikami</target>
+            </segment>
+        </unit>
+        <unit id="admin.back_to_dashboard">
+            <segment>
+                <source>admin.back_to_dashboard</source>
+                <target>Powrót do panelu</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.registered">
+            <segment>
+                <source>admin.users.registered</source>
+                <target>Zarejestrowani użytkownicy</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.sort_by">
+            <segment>
+                <source>admin.users.sort_by</source>
+                <target>Sortuj według</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.sort_date">
+            <segment>
+                <source>admin.users.sort_date</source>
+                <target>Data</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.sort_username">
+            <segment>
+                <source>admin.users.sort_username</source>
+                <target>Nazwa użytkownika</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.sort_email">
+            <segment>
+                <source>admin.users.sort_email</source>
+                <target>Email</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.id">
+            <segment>
+                <source>admin.users.id</source>
+                <target>ID</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.username">
+            <segment>
+                <source>admin.users.username</source>
+                <target>Nazwa użytkownika</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.email">
+            <segment>
+                <source>admin.users.email</source>
+                <target>Email</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.name">
+            <segment>
+                <source>admin.users.name</source>
+                <target>Imię i nazwisko</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.status">
+            <segment>
+                <source>admin.users.status</source>
+                <target>Status</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.created">
+            <segment>
+                <source>admin.users.created</source>
+                <target>Utworzono</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.comments">
+            <segment>
+                <source>admin.users.comments</source>
+                <target>Komentarze</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.actions">
+            <segment>
+                <source>admin.users.actions</source>
+                <target>Akcje</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.status_active">
+            <segment>
+                <source>admin.users.status_active</source>
+                <target>Aktywny</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.status_inactive">
+            <segment>
+                <source>admin.users.status_inactive</source>
+                <target>Nieaktywny</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.no_users_found">
+            <segment>
+                <source>admin.users.no_users_found</source>
+                <target>Nie znaleziono użytkowników</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.no_users_registered">
+            <segment>
+                <source>admin.users.no_users_registered</source>
+                <target>Nie zarejestrowano jeszcze żadnych użytkowników.</target>
+            </segment>
+        </unit>
+        <unit id="user.register">
+            <segment>
+                <source>user.register</source>
+                <target>Zarejestruj się</target>
+            </segment>
+        </unit>
+        <unit id="user.create_account">
+            <segment>
+                <source>user.create_account</source>
+                <target>Utwórz konto</target>
+            </segment>
+        </unit>
+        <unit id="user.already_have_account">
+            <segment>
+                <source>user.already_have_account</source>
+                <target>Masz już konto?</target>
+            </segment>
+        </unit>
+        <unit id="user.login_here">
+            <segment>
+                <source>user.login_here</source>
+                <target>Zaloguj się tutaj</target>
+            </segment>
+        </unit>
+        <unit id="category.new">
+            <segment>
+                <source>category.new</source>
+                <target>Nowa kategoria</target>
+            </segment>
+        </unit>
+        <unit id="category.create_new">
+            <segment>
+                <source>category.create_new</source>
+                <target>Utwórz nową kategorię</target>
+            </segment>
+        </unit>
+        <unit id="category.create">
+            <segment>
+                <source>category.create</source>
+                <target>Utwórz</target>
+            </segment>
+        </unit>
+        <unit id="category.back_to_list">
+            <segment>
+                <source>category.back_to_list</source>
+                <target>Powrót do listy</target>
+            </segment>
+        </unit>
+        <unit id="home.title">
+            <segment>
+                <source>home.title</source>
+                <target>Strona główna</target>
+            </segment>
+        </unit>
+        <unit id="home.welcome">
+            <segment>
+                <source>home.welcome</source>
+                <target>Witamy w Gazecie Internetowej</target>
+            </segment>
+        </unit>
+        <unit id="home.subtitle">
+            <segment>
+                <source>home.subtitle</source>
+                <target>Twoje źródło wiadomości i informacji.</target>
+            </segment>
+        </unit>
+        <unit id="home.login_message">
+            <segment>
+                <source>home.login_message</source>
+                <target>Zaloguj się, aby uzyskać dostęp do panelu administratora.</target>
+            </segment>
+        </unit>
+        <unit id="home.login">
+            <segment>
+                <source>home.login</source>
+                <target>Zaloguj się</target>
+            </segment>
+        </unit>
+        <unit id="admin.title.dashboard">
+            <segment>
+                <source>admin.title.dashboard</source>
+                <target>Panel administratora</target>
+            </segment>
+        </unit>
+        <unit id="admin.panel">
+            <segment>
+                <source>admin.panel</source>
+                <target>Panel administratora</target>
+            </segment>
+        </unit>
+        <unit id="admin.manage_regular_users">
+            <segment>
+                <source>admin.manage_regular_users</source>
+                <target>Zarządzaj użytkownikami</target>
+            </segment>
+        </unit>
+        <unit id="admin.add_new_admin">
+            <segment>
+                <source>admin.add_new_admin</source>
+                <target>Dodaj nowego administratora</target>
+            </segment>
+        </unit>
+        <unit id="admin.edit_profile">
+            <segment>
+                <source>admin.edit_profile</source>
+                <target>Edytuj profil</target>
+            </segment>
+        </unit>
+        <unit id="admin.change_password">
+            <segment>
+                <source>admin.change_password</source>
+                <target>Zmień hasło</target>
+            </segment>
+        </unit>
+        <unit id="admin.account_management">
+            <segment>
+                <source>admin.account_management</source>
+                <target>Zarządzanie kontami</target>
+            </segment>
+        </unit>
+        <unit id="admin.name">
+            <segment>
+                <source>admin.name</source>
+                <target>Imię</target>
+            </segment>
+        </unit>
+        <unit id="admin.email_address">
+            <segment>
+                <source>admin.email_address</source>
+                <target>Adres email</target>
+            </segment>
+        </unit>
+        <unit id="admin.roles">
+            <segment>
+                <source>admin.roles</source>
+                <target>Role</target>
+            </segment>
+        </unit>
+        <unit id="admin.login">
+            <segment>
+                <source>admin.login</source>
+                <target>Zaloguj się</target>
+            </segment>
+        </unit>
+        <unit id="admin.no_account">
+            <segment>
+                <source>admin.no_account</source>
+                <target>Nie masz konta?</target>
+            </segment>
+        </unit>
+        <unit id="admin.register_here">
+            <segment>
+                <source>admin.register_here</source>
+                <target>Zarejestruj się tutaj</target>
+            </segment>
+        </unit>
+        <unit id="admin.dashboard">
+            <segment>
+                <source>admin.dashboard</source>
+                <target>Panel</target>
+            </segment>
+        </unit>
+        <unit id="admin.manage_users">
+            <segment>
+                <source>admin.manage_users</source>
+                <target>Zarządzaj użytkownikami</target>
+            </segment>
+        </unit>
+        <unit id="admin.account_actions">
+            <segment>
+                <source>admin.account_actions</source>
+                <target>Akcje</target>
+            </segment>
+        </unit>
+        <unit id="admin.current_user">
+            <segment>
+                <source>admin.current_user</source>
+                <target>Obecny użytkownik</target>
+            </segment>
+        </unit>
+        <unit id="admin.role_administrator">
+            <segment>
+                <source>admin.role_administrator</source>
+                <target>Administrator</target>
+            </segment>
+        </unit>
+        <unit id="admin.delete_account_note">
+            <segment>
+                <source>admin.delete_account_note</source>
+                <target>To na stałe usunie konto administratora i wszystkie powiązane dane.</target>
+            </segment>
+        </unit>
+        <unit id="admin.delete_admin_account">
+            <segment>
+                <source>admin.delete_admin_account</source>
+                <target>Usuń konto administratora</target>
+            </segment>
+        </unit>
+        <unit id="admin.delete">
+            <segment>
+                <source>admin.delete</source>
+                <target>Usuń</target>
+            </segment>
+        </unit>
+        <unit id="admin.warning">
+            <segment>
+                <source>admin.warning</source>
+                <target>Ostrzeżenie</target>
+            </segment>
+        </unit>
+        <unit id="admin.action_cannot_be_undone">
+            <segment>
+                <source>admin.action_cannot_be_undone</source>
+                <target>Ta akcja nie może być cofnięta!</target>
+            </segment>
+        </unit>
+        <unit id="admin.delete_confirm">
+            <segment>
+                <source>admin.delete_confirm</source>
+                <target>Czy na pewno chcesz usunąć konto administratora dla %name%?</target>
+            </segment>
+        </unit>
+        <unit id="admin.delete_access_warning">
+            <segment>
+                <source>admin.delete_access_warning</source>
+                <target>To na stałe usunie ich dostęp do panelu administracyjnego.</target>
+            </segment>
+        </unit>
+        <unit id="admin.cancel">
+            <segment>
+                <source>admin.cancel</source>
+                <target>Anuluj</target>
+            </segment>
+        </unit>
+        <unit id="admin.delete_account">
+            <segment>
+                <source>admin.delete_account</source>
+                <target>Usuń konto</target>
+            </segment>
+        </unit>
+        <unit id="admin.no_admin_accounts">
+            <segment>
+                <source>admin.no_admin_accounts</source>
+                <target>Nie znaleziono kont administratorów</target>
+            </segment>
+        </unit>
+        <unit id="admin.registered_users">
+            <segment>
+                <source>admin.registered_users</source>
+                <target>Zarejestrowani użytkownicy</target>
+            </segment>
+        </unit>
+        <unit id="admin.sort_by">
+            <segment>
+                <source>admin.sort_by</source>
+                <target>Sortuj według</target>
+            </segment>
+        </unit>
+        <unit id="admin.date">
+            <segment>
+                <source>admin.date</source>
+                <target>Data</target>
+            </segment>
+        </unit>
+        <unit id="admin.username">
+            <segment>
+                <source>admin.username</source>
+                <target>Nazwa użytkownika</target>
+            </segment>
+        </unit>
+        <unit id="admin.email">
+            <segment>
+                <source>admin.email</source>
+                <target>Email</target>
+            </segment>
+        </unit>
+        <unit id="admin.id">
+            <segment>
+                <source>admin.id</source>
+                <target>ID</target>
+            </segment>
+        </unit>
+        <unit id="admin.status">
+            <segment>
+                <source>admin.status</source>
+                <target>Status</target>
+            </segment>
+        </unit>
+        <unit id="admin.created">
+            <segment>
+                <source>admin.created</source>
+                <target>Utworzono</target>
+            </segment>
+        </unit>
+        <unit id="admin.actions">
+            <segment>
+                <source>admin.actions</source>
+                <target>Akcje</target>
+            </segment>
+        </unit>
+        <unit id="admin.active">
+            <segment>
+                <source>admin.active</source>
+                <target>Aktywny</target>
+            </segment>
+        </unit>
+        <unit id="admin.inactive">
+            <segment>
+                <source>admin.inactive</source>
+                <target>Nieaktywny</target>
+            </segment>
+        </unit>
+        <unit id="admin.view_profile">
+            <segment>
+                <source>admin.view_profile</source>
+                <target>Zobacz profil</target>
+            </segment>
+        </unit>
+        <unit id="admin.edit_user">
+            <segment>
+                <source>admin.edit_user</source>
+                <target>Edytuj użytkownika</target>
+            </segment>
+        </unit>
+        <unit id="admin.deactivate_user">
+            <segment>
+                <source>admin.deactivate_user</source>
+                <target>Dezaktywuj użytkownika</target>
+            </segment>
+        </unit>
+        <unit id="admin.activate_user">
+            <segment>
+                <source>admin.activate_user</source>
+                <target>Aktywuj użytkownika</target>
+            </segment>
+        </unit>
+        <unit id="admin.delete_user_confirm">
+            <segment>
+                <source>admin.delete_user_confirm</source>
+                <target>Czy na pewno chcesz usunąć tego użytkownika? Ta akcja nie może być cofnięta.</target>
+            </segment>
+        </unit>
+        <unit id="admin.delete_user">
+            <segment>
+                <source>admin.delete_user</source>
+                <target>Usuń użytkownika</target>
+            </segment>
+        </unit>
+        <unit id="admin.user_pagination">
+            <segment>
+                <source>admin.user_pagination</source>
+                <target>Nawigacja użytkowników</target>
+            </segment>
+        </unit>
+        <unit id="admin.no_users_found">
+            <segment>
+                <source>admin.no_users_found</source>
+                <target>Nie znaleziono użytkowników</target>
+            </segment>
+        </unit>
+        <unit id="admin.no_users_registered">
+            <segment>
+                <source>admin.no_users_registered</source>
+                <target>Nie zarejestrowano jeszcze żadnych użytkowników.</target>
+            </segment>
+        </unit>
+        <unit id="admin.flash.user_deleted">
+            <segment>
+                <source>admin.flash.user_deleted</source>
+                <target>Użytkownik został pomyślnie usunięty.</target>
+            </segment>
+        </unit>
+        <unit id="category.edit">
+            <segment>
+                <source>category.edit</source>
+                <target>Edytuj kategorię</target>
+            </segment>
+        </unit>
+        <unit id="category.update">
+            <segment>
+                <source>category.update</source>
+                <target>Aktualizuj</target>
+            </segment>
+        </unit>
+        <unit id="category.delete">
+            <segment>
+                <source>category.delete</source>
+                <target>Usuń</target>
+            </segment>
+        </unit>
+        <unit id="category.delete_confirm">
+            <segment>
+                <source>category.delete_confirm</source>
+                <target>Czy na pewno chcesz usunąć tę kategorię?</target>
+            </segment>
+        </unit>
+        <unit id="admin.title.new_user">
+            <segment>
+                <source>admin.title.new_user</source>
+                <target>Utwórz nowego administratora</target>
+            </segment>
+        </unit>
+        <unit id="admin.title.edit_user">
+            <segment>
+                <source>admin.title.edit_user</source>
+                <target>Edytuj administratora</target>
+            </segment>
+        </unit>
+        <unit id="admin.back_to_panel">
+            <segment>
+                <source>admin.back_to_panel</source>
+                <target>Powrót do panelu administratora</target>
+            </segment>
+        </unit>
+        <unit id="admin.editing_account">
+            <segment>
+                <source>admin.editing_account</source>
+                <target>Edycja konta administratora:</target>
+            </segment>
+        </unit>
+        <unit id="admin.profile_information">
+            <segment>
+                <source>admin.profile_information</source>
+                <target>Informacje o profilu administratora</target>
+            </segment>
+        </unit>
+        <unit id="admin.enter_full_name">
+            <segment>
+                <source>admin.enter_full_name</source>
+                <target>Wpisz pełne imię administratora</target>
+            </segment>
+        </unit>
+        <unit id="admin.password_management">
+            <segment>
+                <source>admin.password_management</source>
+                <target>Zarządzanie hasłem</target>
+            </segment>
+        </unit>
+        <unit id="admin.password_requirements">
+            <segment>
+                <source>admin.password_requirements</source>
+                <target>Wymagania dotyczące hasła:</target>
+            </segment>
+        </unit>
+        <unit id="admin.password_min_length">
+            <segment>
+                <source>admin.password_min_length</source>
+                <target>Minimum 8 znaków</target>
+            </segment>
+        </unit>
+        <unit id="admin.password_letter_number">
+            <segment>
+                <source>admin.password_letter_number</source>
+                <target>Musi zawierać co najmniej jedną literę i jedną cyfrę</target>
+            </segment>
+        </unit>
+        <unit id="admin.password_special_chars">
+            <segment>
+                <source>admin.password_special_chars</source>
+                <target>Może zawierać znaki specjalne: @$!%*?&amp;</target>
+            </segment>
+        </unit>
+        <unit id="admin.enter_new_password">
+            <segment>
+                <source>admin.enter_new_password</source>
+                <target>Wpisz nowe hasło</target>
+            </segment>
+        </unit>
+        <unit id="admin.update_account">
+            <segment>
+                <source>admin.update_account</source>
+                <target>Aktualizuj konto administratora</target>
+            </segment>
+        </unit>
+        <unit id="admin.save_changes">
+            <segment>
+                <source>admin.save_changes</source>
+                <target>Zapisz zmiany</target>
+            </segment>
+        </unit>
+        <unit id="admin.title.change_password">
+            <segment>
+                <source>admin.title.change_password</source>
+                <target>Zmień hasło administratora</target>
+            </segment>
+        </unit>
+        <unit id="admin.flash.user_created">
+            <segment>
+                <source>admin.flash.user_created</source>
+                <target>Użytkownik został pomyślnie utworzony.</target>
+            </segment>
+        </unit>
+        <unit id="admin.flash.user_create_error">
+            <segment>
+                <source>admin.flash.user_create_error</source>
+                <target>Błąd podczas tworzenia użytkownika.</target>
+            </segment>
+        </unit>
+        <unit id="admin.flash.user_updated">
+            <segment>
+                <source>admin.flash.user_updated</source>
+                <target>Użytkownik został pomyślnie zaktualizowany.</target>
+            </segment>
+        </unit>
+        <unit id="admin.flash.user_activated">
+            <segment>
+                <source>admin.flash.user_activated</source>
+                <target>Użytkownik został pomyślnie aktywowany.</target>
+            </segment>
+        </unit>
+        <unit id="admin.flash.user_deactivated">
+            <segment>
+                <source>admin.flash.user_deactivated</source>
+                <target>Użytkownik został pomyślnie dezaktywowany.</target>
+            </segment>
+        </unit>
+        <unit id="admin.flash.user_update_error">
+            <segment>
+                <source>admin.flash.user_update_error</source>
+                <target>Błąd podczas aktualizacji użytkownika.</target>
+            </segment>
+        </unit>
+        <unit id="admin.flash.user_delete_error">
+            <segment>
+                <source>admin.flash.user_delete_error</source>
+                <target>Błąd podczas usuwania użytkownika.</target>
+            </segment>
+        </unit>
+        <unit id="admin.flash.password_updated">
+            <segment>
+                <source>admin.flash.password_updated</source>
+                <target>Hasło zostało pomyślnie zaktualizowane.</target>
+            </segment>
+        </unit>
+        <unit id="admin.flash.password_update_error">
+            <segment>
+                <source>admin.flash.password_update_error</source>
+                <target>Błąd podczas aktualizacji hasła.</target>
+            </segment>
+        </unit>
+        <unit id="admin.dashboard">
+            <segment>
+                <source>admin.dashboard</source>
+                <target>Panel administratora</target>
+            </segment>
+        </unit>
+        <unit id="admin.users.manage">
+            <segment>
+                <source>admin.users.manage</source>
+                <target>Zarządzaj użytkownikami</target>
+            </segment>
+        </unit>
+        <unit id="admin.account_actions">
+            <segment>
+                <source>admin.account_actions</source>
+                <target>Akcje konta</target>
+            </segment>
+        </unit>
+        <unit id="admin.current_user">
+            <segment>
+                <source>admin.current_user</source>
+                <target>Obecny użytkownik</target>
+            </segment>
+        </unit>
+        <unit id="admin.role_administrator">
+            <segment>
+                <source>admin.role_administrator</source>
+                <target>Administrator</target>
+            </segment>
+        </unit>
+        <unit id="admin.delete_admin_account">
+            <segment>
+                <source>admin.delete_admin_account</source>
+                <target>Usuń konto administratora</target>
+            </segment>
+        </unit>
+        <unit id="admin.delete">
+            <segment>
+                <source>admin.delete</source>
+                <target>Usuń</target>
+            </segment>
+        </unit>
+        <unit id="admin.warning">
+            <segment>
+                <source>admin.warning</source>
+                <target>Ostrzeżenie</target>
+            </segment>
+        </unit>
+        <unit id="admin.action_cannot_be_undone">
+            <segment>
+                <source>admin.action_cannot_be_undone</source>
+                <target>Ta akcja nie może być cofnięta.</target>
+            </segment>
+        </unit>
+        <unit id="admin.delete_confirm">
+            <segment>
+                <source>admin.delete_confirm</source>
+                <target>Czy na pewno chcesz usunąć ten element?</target>
+            </segment>
+        </unit>
+        <unit id="admin.delete_account_note">
+            <segment>
+                <source>admin.delete_account_note</source>
+                <target>To trwale usunie konto i wszystkie powiązane dane.</target>
+            </segment>
+        </unit>
+        <unit id="admin.cancel">
+            <segment>
+                <source>admin.cancel</source>
+                <target>Anuluj</target>
+            </segment>
+        </unit>
+        <unit id="admin.delete_account">
+            <segment>
+                <source>admin.delete_account</source>
+                <target>Usuń konto</target>
+            </segment>
+        </unit>
+        <unit id="admin.no_admin_accounts">
+            <segment>
+                <source>admin.no_admin_accounts</source>
+                <target>Nie znaleziono kont administratorów.</target>
+            </segment>
+        </unit>
+        <unit id="admin.user_not_found">
+            <segment>
+                <source>admin.user_not_found</source>
+                <target>Użytkownik nie został znaleziony.</target>
+            </segment>
+        </unit>
+        <unit id="admin.editing_user_account">
+            <segment>
+                <source>admin.editing_user_account</source>
+                <target>Edycja konta użytkownika:</target>
+            </segment>
+        </unit>
+        <unit id="admin.profile_information_user">
+            <segment>
+                <source>admin.profile_information_user</source>
+                <target>Informacje o profilu użytkownika</target>
+            </segment>
+        </unit>
+        <unit id="admin.title.edit_regular_user">
+            <segment>
+                <source>admin.title.edit_regular_user</source>
+                <target>Edytuj użytkownika</target>
+            </segment>
+        </unit>
+    </file>
+</xliff> 

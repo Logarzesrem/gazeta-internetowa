@@ -1,0 +1,1218 @@
+   1) src/Command/ResetUserPasswordCommand.php (concat_space)
+   2) src/Command/TestAuthCommand.php (concat_space)
+   3) src/Controller/AdminController.php (concat_space, phpdoc_align)
+   4) src/Controller/ArticleController.php (concat_space, phpdoc_align)
+   5) src/Controller/CategoryController.php (phpdoc_align)
+   6) src/Controller/CommentController.php (concat_space, phpdoc_align)
+   7) src/Controller/UserController.php (phpdoc_align)
+   8) src/Entity/AdminUser.php (no_superfluous_phpdoc_tags, phpdoc_trim)
+   9) src/Repository/AdminUserRepository.php (concat_space, phpdoc_align)
+  10) src/Repository/ArticleRepository.php (concat_space, phpdoc_align)
+  11) src/Repository/UserRepository.php (concat_space, phpdoc_align)
+
+Found 11 of 49 files that can be fixed in 2.078 seconds, 20.00 MB memory used
+   1) tests/bootstrap.php (concat_space)
+   2) tests/Controller/AdminControllerTest.php (concat_space)
+   3) tests/Controller/ArticleControllerTest.php (concat_space)
+   4) tests/Controller/CategoryControllerTest.php (concat_space)
+   5) tests/Controller/CommentControllerTest.php (concat_space)
+   6) tests/Form/AdminUserTypeTest.php (concat_space)
+   7) tests/Form/CategoryTypeTest.php (concat_space)
+   8) tests/Form/UserPasswordChangeTypeTest.php (concat_space)
+   9) tests/Form/UserProfileTypeTest.php (concat_space)
+  10) tests/Repository/CommentRepositoryTest.php (concat_space)
+
+Found 10 of 36 files that can be fixed in 1.681 seconds, 18.00 MB memory used
+WARNING: The Symfony standard uses 1 deprecated sniff
+-------------------------------------------------------------------------------
+-  Generic.Functions.CallTimePassByReference
+   This sniff has been deprecated since v3.12.1 and will be removed in v4.0.0.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+
+FILE: /var/www/html/src/Command/FixOrphanedCategoriesCommand.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Command/ResetUserPasswordCommand.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 73 | ERROR | [x] Concat operator must not be surrounded by spaces
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Command/TestAuthCommand.php
+--------------------------------------------------------------------------------
+FOUND 7 ERRORS AFFECTING 7 LINES
+--------------------------------------------------------------------------------
+   8 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+   9 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+  61 | ERROR | [x] Concat operator must not be surrounded by spaces
+  87 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 102 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 103 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 104 | ERROR | [x] Concat operator must not be surrounded by spaces
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Controller/AdminController.php
+----------------------------------------------------------------------
+FOUND 11 ERRORS AFFECTING 10 LINES
+----------------------------------------------------------------------
+  39 | ERROR | [x] Expected 4 spaces after parameter type; 1 found
+  40 | ERROR | [x] Expected 7 spaces after parameter name; 1 found
+  41 | ERROR | [x] Expected 6 spaces after parameter type; 1 found
+  41 | ERROR | [x] Expected 3 spaces after parameter name; 1 found
+ 138 | ERROR | [x] Expected 3 spaces after parameter type; 1 found
+ 139 | ERROR | [x] Expected 4 spaces after parameter name; 1 found
+ 176 | ERROR | [x] Expected 3 spaces after parameter type; 1 found
+ 177 | ERROR | [x] Expected 4 spaces after parameter name; 1 found
+ 186 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 203 | ERROR | [x] Expected 3 spaces after parameter type; 1 found
+ 204 | ERROR | [x] Expected 4 spaces after parameter name; 1 found
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 11 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Controller/ArticleController.php
+----------------------------------------------------------------------
+FOUND 16 ERRORS AFFECTING 10 LINES
+----------------------------------------------------------------------
+  41 | ERROR | [x] Expected 6 spaces after parameter name; 1 found
+  42 | ERROR | [x] Expected 6 spaces after parameter type; 1 found
+  42 | ERROR | [x] Expected 2 spaces after parameter name; 1 found
+  43 | ERROR | [x] Expected 5 spaces after parameter type; 1 found
+  44 | ERROR | [x] Expected 7 spaces after parameter type; 1 found
+  44 | ERROR | [x] Expected 12 spaces after parameter name; 1 found
+  45 | ERROR | [x] Expected 4 spaces after parameter type; 1 found
+  45 | ERROR | [x] Expected 9 spaces after parameter name; 1 found
+  82 | ERROR | [x] Expected 2 spaces after parameter type; 1 found
+  82 | ERROR | [x] Expected 2 spaces after parameter name; 1 found
+ 118 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 172 | ERROR | [x] Expected 5 spaces after parameter type; 1 found
+ 172 | ERROR | [x] Expected 6 spaces after parameter name; 1 found
+ 228 | ERROR | [x] Expected 5 spaces after parameter type; 1 found
+ 228 | ERROR | [x] Expected 6 spaces after parameter name; 1 found
+ 241 | ERROR | [x] Concat operator must not be surrounded by spaces
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 16 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Controller/CategoryController.php
+--------------------------------------------------------------------------------
+FOUND 11 ERRORS AFFECTING 7 LINES
+--------------------------------------------------------------------------------
+   4 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+  33 | ERROR | [x] Expected 4 spaces after parameter name; 1 found
+  34 | ERROR | [x] Expected 6 spaces after parameter type; 1 found
+  34 | ERROR | [x] Expected 9 spaces after parameter name; 1 found
+  35 | ERROR | [x] Expected 9 spaces after parameter type; 1 found
+  35 | ERROR | [x] Expected 12 spaces after parameter name; 1 found
+  36 | ERROR | [x] Expected 7 spaces after parameter type; 1 found
+ 133 | ERROR | [x] Expected 2 spaces after parameter type; 1 found
+ 133 | ERROR | [x] Expected 4 spaces after parameter name; 1 found
+ 186 | ERROR | [x] Expected 2 spaces after parameter type; 1 found
+ 186 | ERROR | [x] Expected 4 spaces after parameter name; 1 found
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 11 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Controller/CommentController.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+  38 | ERROR | [x] Expected 5 spaces after parameter name; 1 found
+  39 | ERROR | [x] Expected 6 spaces after parameter type; 1 found
+ 100 | ERROR | [x] Concat operator must not be surrounded by spaces
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Controller/HomeController.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Controller/UserController.php
+--------------------------------------------------------------------------------
+FOUND 12 ERRORS AFFECTING 7 LINES
+--------------------------------------------------------------------------------
+  8 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+  9 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+ 41 | ERROR | [x] Expected 6 spaces after parameter type; 1 found
+ 41 | ERROR | [x] Expected 2 spaces after parameter name; 1 found
+ 42 | ERROR | [x] Expected 8 spaces after parameter type; 1 found
+ 42 | ERROR | [x] Expected 4 spaces after parameter name; 1 found
+ 44 | ERROR | [x] Expected 16 spaces after parameter type; 1 found
+ 44 | ERROR | [x] Expected 3 spaces after parameter name; 1 found
+ 45 | ERROR | [x] Expected 7 spaces after parameter type; 1 found
+ 45 | ERROR | [x] Expected 3 spaces after parameter name; 1 found
+ 46 | ERROR | [x] Expected 9 spaces after parameter type; 1 found
+ 46 | ERROR | [x] Expected 5 spaces after parameter name; 1 found
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 12 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/DataFixtures/AdminUserFixture.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/DataFixtures/ArticleFixture.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/DataFixtures/CategoryFixture.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/DataFixtures/CommentFixture.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/DataFixtures/UserFixture.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Entity/AdminUser.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Entity/Article.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Entity/Category.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Entity/Comment.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Entity/User.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Form/AdminUserType.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Form/ArticleType.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Form/CategoryType.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Form/CommentType.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Form/LoginType.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Form/UserPasswordChangeType.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Form/UserProfileType.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Form/UserRegistrationType.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Repository/AdminUserRepository.php
+--------------------------------------------------------------------------------
+FOUND 8 ERRORS AFFECTING 6 LINES
+--------------------------------------------------------------------------------
+  8 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+  9 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+ 40 | ERROR | [x] Expected 4 spaces after parameter type; 1 found
+ 40 | ERROR | [x] Expected 10 spaces after parameter name; 1 found
+ 41 | ERROR | [x] Expected 4 spaces after parameter type; 1 found
+ 41 | ERROR | [x] Expected 9 spaces after parameter name; 1 found
+ 42 | ERROR | [x] Expected 5 spaces after parameter name; 1 found
+ 50 | ERROR | [x] Concat operator must not be surrounded by spaces
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Repository/ArticleRepository.php
+--------------------------------------------------------------------------------
+FOUND 12 ERRORS AFFECTING 8 LINES
+--------------------------------------------------------------------------------
+  8 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+  9 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+ 41 | ERROR | [x] Expected 4 spaces after parameter type; 1 found
+ 41 | ERROR | [x] Expected 10 spaces after parameter name; 1 found
+ 42 | ERROR | [x] Expected 4 spaces after parameter type; 1 found
+ 42 | ERROR | [x] Expected 9 spaces after parameter name; 1 found
+ 43 | ERROR | [x] Expected 5 spaces after parameter name; 1 found
+ 59 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 78 | ERROR | [x] Expected 6 spaces after parameter type; 1 found
+ 78 | ERROR | [x] Expected 5 spaces after parameter name; 1 found
+ 79 | ERROR | [x] Expected 6 spaces after parameter type; 1 found
+ 79 | ERROR | [x] Expected 4 spaces after parameter name; 1 found
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 12 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Repository/CategoryRepository.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Repository/CommentRepository.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Repository/Interface/ArticleRepositoryInterface.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Repository/Interface/CategoryRepositoryInterface.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Repository/Interface/CommentRepositoryInterface.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Repository/Interface/UserRepositoryInterface.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Repository/UserRepository.php
+--------------------------------------------------------------------------------
+FOUND 14 ERRORS AFFECTING 10 LINES
+--------------------------------------------------------------------------------
+   8 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+   9 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+  74 | ERROR | [x] Expected 14 spaces after parameter name; 1 found
+  75 | ERROR | [x] Expected 29 spaces after parameter type; 1 found
+  90 | ERROR | [x] Expected 4 spaces after parameter type; 1 found
+  90 | ERROR | [x] Expected 10 spaces after parameter name; 1 found
+  91 | ERROR | [x] Expected 4 spaces after parameter type; 1 found
+  91 | ERROR | [x] Expected 9 spaces after parameter name; 1 found
+  92 | ERROR | [x] Expected 5 spaces after parameter name; 1 found
+ 106 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 164 | ERROR | [x] Expected 4 spaces after parameter type; 1 found
+ 164 | ERROR | [x] Expected 6 spaces after parameter name; 1 found
+ 174 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 174 | ERROR | [x] Concat operator must not be surrounded by spaces
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 14 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Security/AdminUserVoter.php
+--------------------------------------------------------------------------------
+FOUND 6 ERRORS AFFECTING 6 LINES
+--------------------------------------------------------------------------------
+  8 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+  9 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+ 33 | ERROR | [ ] Missing @return tag in function comment
+ 53 | ERROR | [ ] Missing @return tag in function comment
+ 78 | ERROR | [ ] Missing @return tag in function comment
+ 95 | ERROR | [ ] Missing @return tag in function comment
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Security/AuthenticationSuccessHandler.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Security/UserProvider.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Service/AdminUserManager.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Service/CategoryService.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Service/Interface/ArticleServiceInterface.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Service/Interface/AuthenticationServiceInterface.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Service/Interface/CategoryServiceInterface.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Service/Interface/CommentServiceInterface.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Service/Interface/UserServiceInterface.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/src/Service/UserService.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+Time: 2.92 secs; Memory: 10MB
+
+WARNING: The Symfony standard uses 1 deprecated sniff
+-------------------------------------------------------------------------------
+-  Generic.Functions.CallTimePassByReference
+   This sniff has been deprecated since v3.12.1 and will be removed in v4.0.0.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+
+FILE: /var/www/html/tests/AbstractBaseTestCase.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/BaseTestCase.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 8 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+ 9 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Controller/AdminControllerTest.php
+----------------------------------------------------------------------
+FOUND 13 ERRORS AFFECTING 7 LINES
+----------------------------------------------------------------------
+ 103 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 103 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 117 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 117 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 131 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 131 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 145 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 159 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 159 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 173 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 173 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 200 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 200 | ERROR | [x] Concat operator must not be surrounded by spaces
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 13 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Controller/ArticleControllerTest.php
+----------------------------------------------------------------------
+FOUND 8 ERRORS AFFECTING 6 LINES
+----------------------------------------------------------------------
+  63 | ERROR | [x] Concat operator must not be surrounded by spaces
+  78 | ERROR | [x] Concat operator must not be surrounded by spaces
+  78 | ERROR | [x] Concat operator must not be surrounded by spaces
+  93 | ERROR | [x] Concat operator must not be surrounded by spaces
+  93 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 119 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 135 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 136 | ERROR | [x] Concat operator must not be surrounded by spaces
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Controller/CategoryControllerTest.php
+----------------------------------------------------------------------
+FOUND 14 ERRORS AFFECTING 12 LINES
+----------------------------------------------------------------------
+  61 | ERROR | [x] Concat operator must not be surrounded by spaces
+  62 | ERROR | [x] Concat operator must not be surrounded by spaces
+  66 | ERROR | [x] Concat operator must not be surrounded by spaces
+  66 | ERROR | [x] Concat operator must not be surrounded by spaces
+  80 | ERROR | [x] Concat operator must not be surrounded by spaces
+  81 | ERROR | [x] Concat operator must not be surrounded by spaces
+  85 | ERROR | [x] Concat operator must not be surrounded by spaces
+  85 | ERROR | [x] Concat operator must not be surrounded by spaces
+  99 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 100 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 104 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 118 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 119 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 123 | ERROR | [x] Concat operator must not be surrounded by spaces
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 14 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Controller/CommentControllerTest.php
+----------------------------------------------------------------------
+FOUND 16 ERRORS AFFECTING 11 LINES
+----------------------------------------------------------------------
+  40 | ERROR | [x] Concat operator must not be surrounded by spaces
+  40 | ERROR | [x] Concat operator must not be surrounded by spaces
+  52 | ERROR | [x] Concat operator must not be surrounded by spaces
+  63 | ERROR | [x] Concat operator must not be surrounded by spaces
+  63 | ERROR | [x] Concat operator must not be surrounded by spaces
+  75 | ERROR | [x] Concat operator must not be surrounded by spaces
+  86 | ERROR | [x] Concat operator must not be surrounded by spaces
+  86 | ERROR | [x] Concat operator must not be surrounded by spaces
+  98 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 111 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 111 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 138 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 139 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 169 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 170 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 170 | ERROR | [x] Concat operator must not be surrounded by spaces
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 16 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Entity/ArticleTest.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 4 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Entity/CategoryTest.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 4 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Entity/CommentTest.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 4 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Entity/UserTest.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 4 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Form/AdminUserTypeTest.php
+--------------------------------------------------------------------------------
+FOUND 9 ERRORS AFFECTING 7 LINES
+--------------------------------------------------------------------------------
+  28 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+  29 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+ 115 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 115 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 116 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 143 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 143 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 144 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 184 | ERROR | [ ] Missing @return tag in function comment
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Form/ArticleTypeTest.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+   4 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+ 125 | ERROR | [ ] Missing @return tag in function comment
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Form/CategoryTypeTest.php
+--------------------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+--------------------------------------------------------------------------------
+  26 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+  27 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+  72 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 106 | ERROR | [ ] Missing @return tag in function comment
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Form/CommentTypeTest.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+   4 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+ 118 | ERROR | [ ] Missing @return tag in function comment
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Form/TestArticleType.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 27 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+ 28 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Form/UserPasswordChangeTypeTest.php
+--------------------------------------------------------------------------------
+FOUND 8 ERRORS AFFECTING 7 LINES
+--------------------------------------------------------------------------------
+  26 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+  27 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+  34 | ERROR | [ ] Missing @return tag in function comment
+  43 | ERROR | [ ] Declare public methods first,then protected ones and finally
+     |       |     private ones
+  99 | ERROR | [x] Concat operator must not be surrounded by spaces
+  99 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 100 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 101 | ERROR | [x] Concat operator must not be surrounded by spaces
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 6 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Form/UserProfileTypeTest.php
+--------------------------------------------------------------------------------
+FOUND 8 ERRORS AFFECTING 7 LINES
+--------------------------------------------------------------------------------
+  28 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+  29 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+  36 | ERROR | [ ] Missing @return tag in function comment
+  45 | ERROR | [ ] Declare public methods first,then protected ones and finally
+     |       |     private ones
+ 109 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 110 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 110 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 111 | ERROR | [x] Concat operator must not be surrounded by spaces
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 6 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Repository/ArticleRepositoryTest.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 4 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Repository/CategoryRepositoryTest.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 4 | ERROR | [x] Group annotations together so that annotations of the same
+   |       |     type immediately follow each other, and annotations of a
+   |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Repository/CommentRepositoryTest.php
+--------------------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+--------------------------------------------------------------------------------
+  26 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+  27 | ERROR | [x] Group annotations together so that annotations of the same
+     |       |     type immediately follow each other, and annotations of a
+     |       |     different type are separated by a single blank line
+  57 | ERROR | [x] Concat operator must not be surrounded by spaces
+ 168 | ERROR | [x] Concat operator must not be surrounded by spaces
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Repository/UserRepositoryTest.php
+--------------------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+--------------------------------------------------------------------------------
+ 26 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+ 27 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+ 73 | ERROR | [ ] Declare public methods first,then protected ones and finally
+    |       |     private ones
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Security/AdminUserVoterTest.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 25 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+ 26 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Service/AdminUserManagerTest.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 28 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+ 29 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: /var/www/html/tests/Service/UserServiceTest.php
+--------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 27 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+ 28 | ERROR | [x] Group annotations together so that annotations of the same
+    |       |     type immediately follow each other, and annotations of a
+    |       |     different type are separated by a single blank line
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+Time: 2.98 secs; Memory: 10MB
+
+ ------- -------- ---- ---------------------- 
+  State   Domain   Id   Message Preview (en)  
+ ------- -------- ---- ---------------------- 
+
+ ------- -------- ---- ---------------------- ------------------------------- 
+  State   Domain   Id   Message Preview (pl)   Fallback Message Preview (en)  
+ ------- -------- ---- ---------------------- ------------------------------- 
+
+[notice] Migrating up to DoctrineMigrations\Version20250701000000
+   > purging database
+   > loading App\DataFixtures\AdminUserFixture
+   > loading App\DataFixtures\CategoryFixture
+   > loading App\DataFixtures\UserFixture
+   > loading App\DataFixtures\ArticleFixture
+   > loading App\DataFixtures\CommentFixture

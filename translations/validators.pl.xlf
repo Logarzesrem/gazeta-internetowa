@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="pl">
+  <file id="messages.pl.xlf">
+    <unit id="a_category_with_this_name_already_exists">
+      <segment>
+        <source>A category with this name already exists.</source>
+        <target>Kategoria o tej nazwie już istnieje.</target>
+      </segment>
+    </unit>
+    <unit id="validation.name.not_blank">
+      <segment>
+        <source>validation.name.not_blank</source>
+        <target>Nazwa nie może być pusta.</target>
+      </segment>
+    </unit>
+    <unit id="validation.name.too_short">
+      <segment>
+        <source>validation.name.too_short</source>
+        <target>Nazwa musi mieć co najmniej 2 znaki.</target>
+      </segment>
+    </unit>
+    <unit id="validation.name.too_long">
+      <segment>
+        <source>validation.name.too_long</source>
+        <target>Nazwa nie może przekraczać 255 znaków.</target>
+      </segment>
+    </unit>
+    <unit id="validation.slug.invalid">
+      <segment>
+        <source>validation.slug.invalid</source>
+        <target>Slug zawiera nieprawidłowe znaki.</target>
+      </segment>
+    </unit>
+    <unit id="validation.title.not_blank">
+      <segment>
+        <source>validation.title.not_blank</source>
+        <target>Tytuł nie może być pusty.</target>
+      </segment>
+    </unit>
+    <unit id="validation.title.too_short">
+      <segment>
+        <source>validation.title.too_short</source>
+        <target>Tytuł musi mieć co najmniej 3 znaki.</target>
+      </segment>
+    </unit>
+    <unit id="validation.title.too_long">
+      <segment>
+        <source>validation.title.too_long</source>
+        <target>Tytuł nie może przekraczać 255 znaków.</target>
+      </segment>
+    </unit>
+    <unit id="validation.content.not_blank">
+      <segment>
+        <source>validation.content.not_blank</source>
+        <target>Treść nie może być pusta.</target>
+      </segment>
+    </unit>
+    <unit id="validation.content.too_short">
+      <segment>
+        <source>validation.content.too_short</source>
+        <target>Treść musi mieć co najmniej 10 znaków.</target>
+      </segment>
+    </unit>
+    <unit id="validation.content.too_long">
+      <segment>
+        <source>validation.content.too_long</source>
+        <target>Treść nie może przekraczać 10000 znaków.</target>
+      </segment>
+    </unit>
+    <unit id="this_email_is_already_registered">
+      <segment>
+        <source>This email is already registered.</source>
+        <target>Ten adres email jest już zarejestrowany.</target>
+      </segment>
+    </unit>
+    <unit id="this_username_is_already_taken">
+      <segment>
+        <source>This username is already taken.</source>
+        <target>Ta nazwa użytkownika jest już zajęta.</target>
+      </segment>
+    </unit>
+    <unit id="email_is_required">
+      <segment>
+        <source>Email is required.</source>
+        <target>Email jest wymagany.</target>
+      </segment>
+    </unit>
+    <unit id="email_is_too_long">
+      <segment>
+        <source>Email is too long.</source>
+        <target>Email jest za długi.</target>
+      </segment>
+    </unit>
+    <unit id="username_is_required">
+      <segment>
+        <source>Username is required.</source>
+        <target>Nazwa użytkownika jest wymagana.</target>
+      </segment>
+    </unit>
+    <unit id="username_must_be_at_least_3_characters_long">
+      <segment>
+        <source>Username must be at least 3 characters long.</source>
+        <target>Nazwa użytkownika musi mieć co najmniej 3 znaki.</target>
+      </segment>
+    </unit>
+    <unit id="username_cannot_exceed_50_characters">
+      <segment>
+        <source>Username cannot exceed 50 characters.</source>
+        <target>Nazwa użytkownika nie może przekraczać 50 znaków.</target>
+      </segment>
+    </unit>
+    <unit id="username_can_only_contain_letters_numbers_and_underscores">
+      <segment>
+        <source>Username can only contain letters, numbers, and underscores.</source>
+        <target>Nazwa użytkownika może zawierać tylko litery, cyfry i podkreślniki.</target>
+      </segment>
+    </unit>
+    <unit id="name_is_required">
+      <segment>
+        <source>Name is required.</source>
+        <target>Imię jest wymagane.</target>
+      </segment>
+    </unit>
+    <unit id="name_must_be_at_least_2_characters_long">
+      <segment>
+        <source>Name must be at least 2 characters long.</source>
+        <target>Imię musi mieć co najmniej 2 znaki.</target>
+      </segment>
+    </unit>
+    <unit id="name_cannot_exceed_255_characters">
+      <segment>
+        <source>Name cannot exceed 255 characters.</source>
+        <target>Imię nie może przekraczać 255 znaków.</target>
+      </segment>
+    </unit>
+    <unit id="password_is_required">
+      <segment>
+        <source>Password is required.</source>
+        <target>Hasło jest wymagane.</target>
+      </segment>
+    </unit>
+    <unit id="password_must_be_at_least_8_characters_long">
+      <segment>
+        <source>Password must be at least 8 characters long.</source>
+        <target>Hasło musi mieć co najmniej 8 znaków.</target>
+      </segment>
+    </unit>
+    <unit id="password_cannot_exceed_50_characters">
+      <segment>
+        <source>Password cannot exceed 50 characters.</source>
+        <target>Hasło nie może przekraczać 50 znaków.</target>
+      </segment>
+    </unit>
+    <unit id="password_must_contain_at_least_one_letter_and_one_number">
+      <segment>
+        <source>Password must contain at least one letter and one number.</source>
+        <target>Hasło musi zawierać co najmniej jedną literę i jedną cyfrę.</target>
+      </segment>
+    </unit>
+  </file>
+</xliff> 
