@@ -96,14 +96,14 @@ final class Version20250701000000 extends AbstractMigration
         SQL);
 
         // Create migration_versions table
-        $this->addSql(<<<'SQL'
-            CREATE TABLE migration_versions (
-                version VARCHAR(191) NOT NULL,
-                executed_at DATETIME DEFAULT NULL COMMENT '(DC2Type:datetime_immutable)',
-                execution_time INT DEFAULT NULL,
-                PRIMARY KEY(version)
-            ) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
-        SQL);
+     //   $this->addSql(<<<'SQL'
+      //      CREATE TABLE migration_versions (
+    //            version VARCHAR(191) NOT NULL,
+       //         executed_at DATETIME DEFAULT NULL COMMENT '(DC2Type:datetime_immutable)',
+       //         execution_time INT DEFAULT NULL,
+      //          PRIMARY KEY(version)
+     //       ) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
+      //  SQL);
 
         // Add foreign key constraints
         $this->addSql(<<<'SQL'
