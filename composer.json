@@ -26,7 +26,7 @@
         "symfony/maker-bundle": "^1.63",
         "doctrine/doctrine-fixtures-bundle": "^4.1",
         "squizlabs/php_codesniffer": "^3.13",
-        "phpunit/phpunit": "*",
+        "phpunit/phpunit": "^9.6",
         "friendsofphp/php-cs-fixer": "^3.80",
         "rector/rector": "^2.0",
         "escapestudios/symfony2-coding-standard": "^3.15",
@@ -43,11 +43,13 @@
     "scripts": {
         "post-install-cmd": [
             "php bin/console doctrine:migrations:migrate --no-interaction",
-            "php bin/console doctrine:fixtures:load --no-interaction"
+            "php bin/console doctrine:fixtures:load --no-interaction",
+            "ln -sf ../vendor/bin/phpunit bin/phpunit"
         ],
         "post-update-cmd": [
             "php bin/console doctrine:migrations:migrate --no-interaction",
-            "php bin/console doctrine:fixtures:load --no-interaction"
+            "php bin/console doctrine:fixtures:load --no-interaction",
+            "ln -sf ../vendor/bin/phpunit bin/phpunit"
         ],
         "static-analysis": [
             "./vendor/bin/phpcs --config-set installed_paths $(realpath vendor/escapestudios/symfony2-coding-standard)",
