@@ -1,0 +1,94 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'user.profile'|trans }}{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0">{{ 'user.profile'|trans }}</h2>
+                    <div>
+                        <a href="{{ path('app_user_profile_edit') }}" class="btn btn-warning btn-sm">{{ 'user.edit_profile'|trans }}</a>
+                        <a href="{{ path('app_user_change_password') }}" class="btn btn-info btn-sm">{{ 'user.change_password'|trans }}</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            {% if user.avatar %}
+                                <img src="{{ user.avatar }}" alt="Avatar" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
+                            {% else %}
+                                <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center mb-3 mx-auto" style="width: 100px; height: 100px;">
+                                    <span class="text-white fs-1">{{ user.name|first|upper }}</span>
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="col-md-9">
+                            <table class="table table-borderless">
+                                <tr>
+                                    <th width="30%">{{ 'user.username'|trans }}:</th>
+                                    <td>{{ user.username }}</td>
+                                </tr>
+                                <tr>
+                                    <th>{{ 'user.full_name'|trans }}:</th>
+                                    <td>{{ user.name }}</td>
+                                </tr>
+                                <tr>
+                                    <th>{{ 'user.email'|trans }}:</th>
+                                    <td>{{ user.email }}</td>
+                                </tr>
+                                <tr>
+                                    <th>{{ 'user.member_since'|trans }}:</th>
+                                    <td>{{ user.createdAt|date('d.m.Y') }}</td>
+                                </tr>
+                                {% if user.lastLoginAt %}
+                                <tr>
+                                    <th>{{ 'user.last_login'|trans }}:</th>
+                                    <td>{{ user.lastLoginAt|date('d.m.Y H:i') }}</td>
+                                </tr>
+                                {% endif %}
+                                {% if user.bio %}
+                                <tr>
+                                    <th>{{ 'user.bio'|trans }}:</th>
+                                    <td>{{ user.bio|nl2br }}</td>
+                                </tr>
+                                {% endif %}
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <div class="card-header">
+                    <h3 class="h5 mb-0">{{ 'user.activity'|trans }}</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="border rounded p-3">
+                                <h4 class="text-primary">{{ user.comments|length }}</h4>
+                                <p class="mb-0">{{ 'user.comments'|trans }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="border rounded p-3">
+                                <h4 class="text-success">{{ user.createdAt|date('m.Y') }}</h4>
+                                <p class="mb-0">{{ 'user.member_since'|trans }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="border rounded p-3">
+                                <h4 class="text-info">{{ user.isActive ? ('user.active'|trans) : ('user.inactive'|trans) }}</h4>
+                                <p class="mb-0">{{ 'user.status'|trans }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

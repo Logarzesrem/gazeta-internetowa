@@ -1,14 +1,193 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Panel Administratora{% endblock %}
+{% block title %}{{ 'admin.dashboard'|trans({}, 'admin') }}{% endblock %}
 
 {% block body %}
-    <h1>Witaj, {{ user.name }}!</h1>
-    <p>To jest panel administratora.</p>
+<div class="container mt-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1>{{ 'admin.dashboard'|trans({}, 'admin') }}</h1>
+                <div>
+                    <a href="{{ path('admin_users_list') }}" class="btn btn-info me-2">
+                        <i class="bi bi-people"></i> {{ 'admin.users.manage'|trans({}, 'admin') }}
+                    </a>
+                    <a href="{{ path('admin_user_new') }}" class="btn btn-primary">
+                        <i class="bi bi-plus-lg"></i> {{ 'admin.add_new_admin'|trans({}, 'admin') }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <ul>
-        <li><a href="#">Zarządzaj artykułami</a></li>
-        <li><a href="#">Zarządzaj kategoriami</a></li>
-        <li><a href="{{ path('app_logout') }}">Wyloguj się</a></li>
-    </ul>
+    <!-- Admin Management Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card border-primary">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="h5 mb-0">
+                        <i class="bi bi-shield-lock"></i> {{ 'admin.account_management'|trans({}, 'admin') }}
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>
+                                        <a href="{{ path('admin_dashboard', {
+                                            sort: 'name',
+                                            direction: sortField == 'name' and sortDirection == 'asc' ? 'desc' : 'asc',
+                                            page: page
+                                        }) }}" class="text-decoration-none text-dark">
+                                            <i class="bi bi-person"></i> {{ 'admin.name'|trans({}, 'admin') }}
+                                            {% if sortField == 'name' %}
+                                                <i class="bi bi-sort-{{ sortDirection == 'asc' ? 'down' : 'up' }}"></i>
+                                            {% endif %}
+                                        </a>
+                                    </th>
+                                    <th>
+                                        <a href="{{ path('admin_dashboard', {
+                                            sort: 'email',
+                                            direction: sortField == 'email' and sortDirection == 'asc' ? 'desc' : 'asc',
+                                            page: page
+                                        }) }}" class="text-decoration-none text-dark">
+                                            <i class="bi bi-envelope"></i> {{ 'admin.email_address'|trans({}, 'admin') }}
+                                            {% if sortField == 'email' %}
+                                                <i class="bi bi-sort-{{ sortDirection == 'asc' ? 'down' : 'up' }}"></i>
+                                            {% endif %}
+                                        </a>
+                                    </th>
+                                    <th><i class="bi bi-shield"></i> {{ 'admin.roles'|trans({}, 'admin') }}</th>
+                                    <th class="text-end"><i class="bi bi-gear"></i> {{ 'admin.account_actions'|trans({}, 'admin') }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for user in users %}
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-2" style="width: 32px; height: 32px;">
+                                                    <span class="text-white small fw-bold">{{ user.name|first|upper }}</span>
+                                                </div>
+                                                <div>
+                                                    <strong>{{ user.name }}</strong>
+                                                    {% if user == app.user %}
+                                                        <span class="badge bg-success ms-2">{{ 'admin.current_user'|trans({}, 'admin') }}</span>
+                                                    {% endif %}
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <code class="text-primary">{{ user.email }}</code>
+                                        </td>
+                                        <td>
+                                            {% for role in user.roles %}
+                                                {% if role == 'ROLE_ADMIN' %}
+                                                    <span class="badge bg-primary">
+                                                        <i class="bi bi-shield-fill"></i> {{ 'admin.role_administrator'|trans({}, 'admin') }}
+                                                    </span>
+                                                {% else %}
+                                                    <span class="badge bg-secondary">{{ role }}</span>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </td>
+                                        <td class="text-end">
+                                            {% if is_granted('edit', user) %}
+                                                <div class="btn-group" role="group">
+                                                    <a href="{{ path('admin_user_edit', {id: user.id}) }}" 
+                                                       class="btn btn-sm btn-outline-primary" 
+                                                       title="{{ 'admin.edit_profile'|trans({}, 'admin') }}">
+                                                        <i class="bi bi-pencil-square"></i>
+                                                        <span class="d-none d-md-inline ms-1">{{ 'admin.edit_profile'|trans({}, 'admin') }}</span>
+                                                    </a>
+                                                    <a href="{{ path('admin_user_password', {id: user.id}) }}" 
+                                                       class="btn btn-sm btn-outline-warning" 
+                                                       title="{{ 'admin.change_password'|trans({}, 'admin') }}">
+                                                        <i class="bi bi-key-fill"></i>
+                                                        <span class="d-none d-md-inline ms-1">{{ 'admin.change_password'|trans({}, 'admin') }}</span>
+                                                    </a>
+                                                </div>
+                                            {% endif %}
+                                            {% if is_granted('delete', user) and user != app.user %}
+                                                <button type="button" 
+                                                        class="btn btn-sm btn-outline-danger ms-1" 
+                                                        data-bs-toggle="modal" 
+                                                        data-bs-target="#deleteModal{{ user.id }}"
+                                                        title="{{ 'admin.delete_admin_account'|trans({}, 'admin') }}">
+                                                    <i class="bi bi-trash"></i>
+                                                    <span class="d-none d-md-inline ms-1">{{ 'admin.delete'|trans({}, 'admin') }}</span>
+                                                </button>
+
+                                                <div class="modal fade" id="deleteModal{{ user.id }}" tabindex="-1">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header bg-danger text-white">
+                                                                <h5 class="modal-title">
+                                                                    <i class="bi bi-exclamation-triangle"></i> 
+                                                                    {{ 'admin.delete_admin_account'|trans({}, 'admin') }}
+                                                                </h5>
+                                                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="alert alert-warning">
+                                                                    <i class="bi bi-exclamation-triangle"></i>
+                                                                    <strong>{{ 'admin.warning'|trans({}, 'admin') }}</strong> {{ 'admin.action_cannot_be_undone'|trans({}, 'admin') }}
+                                                                </div>
+                                                                <p>{{ 'admin.delete_confirm'|trans({'%name%': user.name}, 'admin') }}</p>
+                                                                <p class="text-muted small">{{ 'admin.delete_account_note'|trans({}, 'admin') }}</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                                    <i class="bi bi-x-circle"></i> {{ 'admin.cancel'|trans({}, 'admin') }}
+                                                                </button>
+                                                                <form action="{{ path('admin_user_delete', {id: user.id}) }}" method="post" class="d-inline">
+                                                                    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ user.id) }}">
+                                                                    <button type="submit" class="btn btn-danger">
+                                                                        <i class="bi bi-trash"></i> {{ 'admin.delete_account'|trans({}, 'admin') }}
+                                                                    </button>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                {% else %}
+                                    <tr>
+                                        <td colspan="4" class="text-center text-muted py-4">
+                                            <i class="bi bi-shield-x display-4"></i>
+                                            <p class="mt-2">{{ 'admin.no_admin_accounts'|trans({}, 'admin') }}</p>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {% if total > 0 %}
+                        <div class="d-flex justify-content-between align-items-center">
+                            <nav>
+                                <ul class="pagination mb-0">
+                                    {% set pages = ((total - 1) / 10)|round(0, 'ceil') %}
+                                    {% set pages = pages > 0 ? pages : 1 %}
+                                    {% for i in 1..pages %}
+                                        <li class="page-item {{ page == i ? 'active' }}">
+                                            <a class="page-link" href="{{ path('admin_dashboard', {
+                                                page: i,
+                                                sort: sortField,
+                                                direction: sortDirection
+                                            }) }}">{{ i }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </nav>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

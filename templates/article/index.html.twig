@@ -1,0 +1,100 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'article.title.list'|trans }}{% endblock %}
+
+{% block body %}
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>{{ 'article.title.list'|trans }}</h1>
+
+                <div class="mb-3">
+                    <span>{{ 'article.sort.by'|trans }}: </span>
+                    <a href="{{ path('app_article_index', {
+                        sort: 'createdAt',
+                        direction: sortField == 'createdAt' and sortDirection == 'DESC' ? 'ASC' : 'DESC',
+                        page: page
+                    }) }}" class="btn btn-link p-0 {{ sortField == 'createdAt' ? 'fw-bold' : '' }}">
+                        {{ 'article.sort.date'|trans }}
+                        {% if sortField == 'createdAt' %}
+                            <i class="bi bi-sort-{{ sortDirection == 'ASC' ? 'up' : 'down' }}"></i>
+                        {% endif %}
+                    </a>
+                    |
+                    <a href="{{ path('app_article_index', {
+                        sort: 'title',
+                        direction: sortField == 'title' and sortDirection == 'ASC' ? 'DESC' : 'ASC',
+                        page: page
+                    }) }}" class="btn btn-link p-0 {{ sortField == 'title' ? 'fw-bold' : '' }}">
+                        {{ 'article.sort.title'|trans }}
+                        {% if sortField == 'title' %}
+                            <i class="bi bi-sort-{{ sortDirection == 'ASC' ? 'up' : 'down' }}"></i>
+                        {% endif %}
+                    </a>
+                </div>
+
+                {% for article in articles %}
+                    <article class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                <a href="{{ path('app_article_show', {id: article.id}) }}" class="text-decoration-none">
+                                    {{ article.title }}
+                                </a>
+                            </h2>
+                            <p class="card-text text-muted">
+                                <small>
+                                    {{ 'article.by'|trans }} {{ article.author.name }} {{ 'article.in'|trans }} 
+                                    {% if article.category %}
+                                        <a href="{{ path('app_article_by_category', {slug: article.category.slug}) }}" class="text-decoration-none">
+                                            {{ article.category.name }}
+                                        </a>
+                                    {% else %}
+                                        <em>{{ 'article.no_categories'|trans }}</em>
+                                    {% endif %}
+                                    {{ 'article.on'|trans }} {{ article.createdAt|date('d.m.Y') }}
+                                </small>
+                            </p>
+                            <p class="card-text">{{ article.content|slice(0, 200) }}...</p>
+                            <a href="{{ path('app_article_show', {id: article.id}) }}" class="btn btn-primary">{{ 'article.read_more'|trans }}</a>
+                        </div>
+                    </article>
+                {% else %}
+                    <p>{{ 'article.no_articles'|trans }}</p>
+                {% endfor %}
+
+                {% if total > limit %}
+                    <nav aria-label="{{ 'pagination.navigation'|trans }}">
+                        <ul class="pagination justify-content-center">
+                            {% set pages = (total / limit)|round(0, 'ceil') %}
+                            {% for i in 1..pages %}
+                                <li class="page-item {{ page == i ? 'active' : '' }}">
+                                    <a class="page-link" href="{{ path('app_article_index', {page: i, sort: sortField, direction: sortDirection}) }}">{{ i }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                {% endif %}
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="h5 mb-0">{{ 'category.title.list'|trans }}</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0">
+                            {% for category in categories %}
+                                <li class="mb-2">
+                                    <a href="{{ path('app_article_by_category', {slug: category.slug}) }}" class="text-decoration-none">
+                                        {{ category.name }}
+                                        <span class="badge bg-secondary float-end">{{ category.articleCount }}</span>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %} 

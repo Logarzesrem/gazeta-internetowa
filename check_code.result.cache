@@ -1,0 +1,105 @@
+   1) src/Command/FixOrphanedCategoriesCommand.php (phpdoc_separation)
+   2) src/Command/ResetUserPasswordCommand.php (phpdoc_separation)
+   3) src/Command/TestAuthCommand.php (phpdoc_separation)
+   4) src/Controller/CategoryController.php (phpdoc_separation)
+   5) src/Controller/HomeController.php (phpdoc_separation)
+   6) src/Controller/UserController.php (phpdoc_separation)
+   7) src/DataFixtures/AdminUserFixture.php (phpdoc_separation)
+   8) src/DataFixtures/ArticleFixture.php (phpdoc_separation)
+   9) src/DataFixtures/CategoryFixture.php (phpdoc_separation)
+  10) src/DataFixtures/CommentFixture.php (phpdoc_separation)
+  11) src/DataFixtures/UserFixture.php (phpdoc_separation)
+  12) src/Entity/AdminUser.php (phpdoc_separation)
+  13) src/Entity/Article.php (phpdoc_separation)
+  14) src/Entity/Category.php (phpdoc_separation)
+  15) src/Entity/Comment.php (phpdoc_separation)
+  16) src/Entity/User.php (phpdoc_separation)
+  17) src/Form/AdminUserType.php (phpdoc_separation)
+  18) src/Form/ArticleType.php (phpdoc_separation)
+  19) src/Form/CategoryType.php (phpdoc_separation)
+  20) src/Form/CommentType.php (phpdoc_separation)
+  21) src/Form/LoginType.php (phpdoc_separation)
+  22) src/Form/UserPasswordChangeType.php (phpdoc_separation)
+  23) src/Form/UserProfileType.php (phpdoc_separation)
+  24) src/Form/UserRegistrationType.php (phpdoc_separation)
+  25) src/Kernel.php (phpdoc_separation)
+  26) src/Repository/AdminUserRepository.php (phpdoc_separation)
+  27) src/Repository/ArticleRepository.php (phpdoc_separation)
+  28) src/Repository/CategoryRepository.php (phpdoc_separation)
+  29) src/Repository/CommentRepository.php (phpdoc_separation)
+  30) src/Repository/Interface/ArticleRepositoryInterface.php (phpdoc_separation)
+  31) src/Repository/Interface/CategoryRepositoryInterface.php (phpdoc_separation)
+  32) src/Repository/Interface/CommentRepositoryInterface.php (phpdoc_separation)
+  33) src/Repository/Interface/UserRepositoryInterface.php (phpdoc_separation)
+  34) src/Repository/UserRepository.php (phpdoc_separation)
+  35) src/Security/AdminUserVoter.php (phpdoc_separation)
+  36) src/Security/AuthenticationSuccessHandler.php (phpdoc_separation)
+  37) src/Security/UserProvider.php (phpdoc_order, phpdoc_separation)
+  38) src/Service/AdminUserManager.php (phpdoc_separation)
+  39) src/Service/CategoryService.php (phpdoc_separation)
+  40) src/Service/Interface/ArticleServiceInterface.php (phpdoc_separation)
+  41) src/Service/Interface/AuthenticationServiceInterface.php (phpdoc_separation)
+  42) src/Service/Interface/CategoryServiceInterface.php (phpdoc_separation)
+  43) src/Service/Interface/CommentServiceInterface.php (phpdoc_separation)
+  44) src/Service/Interface/UserServiceInterface.php (phpdoc_separation)
+  45) src/Service/UserService.php (phpdoc_order, phpdoc_separation)
+
+Found 45 of 49 files that can be fixed in 2.161 seconds, 20.00 MB memory used
+   1) tests/AbstractBaseTestCase.php (phpdoc_separation)
+   2) tests/BaseTestCase.php (phpdoc_separation)
+   3) tests/Entity/ArticleTest.php (phpdoc_separation)
+   4) tests/Entity/CategoryTest.php (phpdoc_separation)
+   5) tests/Entity/CommentTest.php (phpdoc_separation)
+   6) tests/Entity/UserTest.php (phpdoc_separation)
+   7) tests/Form/AdminUserTypeTest.php (no_superfluous_phpdoc_tags, phpdoc_separation, phpdoc_trim)
+   8) tests/Form/ArticleTypeTest.php (no_superfluous_phpdoc_tags, phpdoc_separation, phpdoc_trim)
+   9) tests/Form/CategoryTypeTest.php (no_superfluous_phpdoc_tags, phpdoc_separation, phpdoc_trim)
+  10) tests/Form/CommentTypeTest.php (no_superfluous_phpdoc_tags, phpdoc_separation, phpdoc_trim)
+  11) tests/Form/TestArticleType.php (phpdoc_separation)
+  12) tests/Form/UserPasswordChangeTypeTest.php (no_superfluous_phpdoc_tags, phpdoc_separation, phpdoc_trim)
+  13) tests/Form/UserProfileTypeTest.php (no_superfluous_phpdoc_tags, phpdoc_separation, phpdoc_trim)
+  14) tests/Repository/ArticleRepositoryTest.php (phpdoc_separation)
+  15) tests/Repository/CategoryRepositoryTest.php (phpdoc_separation)
+  16) tests/Repository/CommentRepositoryTest.php (phpdoc_separation)
+  17) tests/Repository/UserRepositoryTest.php (phpdoc_separation)
+  18) tests/Security/AdminUserVoterTest.php (phpdoc_separation)
+  19) tests/Service/AdminUserManagerTest.php (phpdoc_separation)
+  20) tests/Service/UserServiceTest.php (phpdoc_separation)
+
+Found 20 of 36 files that can be fixed in 1.676 seconds, 20.00 MB memory used
+WARNING: The Symfony standard uses 1 deprecated sniff
+-------------------------------------------------------------------------------
+-  Generic.Functions.CallTimePassByReference
+   This sniff has been deprecated since v3.12.1 and will be removed in v4.0.0.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+WARNING: The Symfony standard uses 1 deprecated sniff
+-------------------------------------------------------------------------------
+-  Generic.Functions.CallTimePassByReference
+   This sniff has been deprecated since v3.12.1 and will be removed in v4.0.0.
+
+Deprecated sniffs are still run, but will stop working at some point in the
+future.
+
+ ------- -------- ---- ---------------------- 
+  State   Domain   Id   Message Preview (en)  
+ ------- -------- ---- ---------------------- 
+
+ ------- -------- ---- ---------------------- ------------------------------- 
+  State   Domain   Id   Message Preview (pl)   Fallback Message Preview (en)  
+ ------- -------- ---- ---------------------- ------------------------------- 
+
+[notice] Migrating up to DoctrineMigrations\Version20250701000000
+[notice] finished in 968.3ms, used 20M memory, 1 migrations executed, 9 sql queries
+
+ [OK] Successfully migrated to version: DoctrineMigrations\Version20250701000000
+
+
+   > purging database
+   > loading App\DataFixtures\AdminUserFixture
+   > loading App\DataFixtures\CategoryFixture
+   > loading App\DataFixtures\UserFixture
+   > loading App\DataFixtures\ArticleFixture
+   > loading App\DataFixtures\CommentFixture

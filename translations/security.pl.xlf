@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="Invalid credentials.">
+                <source>Invalid credentials.</source>
+                <target>Nieprawidłowy email lub hasło.</target>
+            </trans-unit>
+            <trans-unit id="User account is disabled.">
+                <source>User account is disabled.</source>
+                <target>Twoje konto zostało wyłączone. Skontaktuj się z administratorem.</target>
+            </trans-unit>
+            <trans-unit id="Too many failed login attempts, please try again in %minutes% minutes.">
+                <source>Too many failed login attempts, please try again in %minutes% minutes.</source>
+                <target>Zbyt wiele nieudanych prób logowania, spróbuj ponownie za %minutes% minut.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff> 

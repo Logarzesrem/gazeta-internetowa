@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="navbar.brand">
+                <source>navbar.brand</source>
+                <target>Gazeta Internetowa</target>
+            </trans-unit>
+            <trans-unit id="navbar.articles">
+                <source>navbar.articles</source>
+                <target>Artykuły</target>
+            </trans-unit>
+            <trans-unit id="navbar.categories">
+                <source>navbar.categories</source>
+                <target>Kategorie</target>
+            </trans-unit>
+            <trans-unit id="navbar.new_article">
+                <source>navbar.new_article</source>
+                <target>Nowy artykuł</target>
+            </trans-unit>
+            <trans-unit id="navbar.new_category">
+                <source>navbar.new_category</source>
+                <target>Nowa kategoria</target>
+            </trans-unit>
+            <trans-unit id="navbar.logout">
+                <source>navbar.logout</source>
+                <target>Wyloguj</target>
+            </trans-unit>
+            <trans-unit id="navbar.login">
+                <source>navbar.login</source>
+                <target>Zaloguj</target>
+            </trans-unit>
+            <trans-unit id="article.title.list">
+                <source>article.title.list</source>
+                <target>Artykuły</target>
+            </trans-unit>
+            <trans-unit id="article.sort.by">
+                <source>article.sort.by</source>
+                <target>Sortuj według</target>
+            </trans-unit>
+            <trans-unit id="article.sort.date">
+                <source>article.sort.date</source>
+                <target>Daty</target>
+            </trans-unit>
+            <trans-unit id="article.sort.title">
+                <source>article.sort.title</source>
+                <target>Tytułu</target>
+            </trans-unit>
+            <trans-unit id="article.by">
+                <source>article.by</source>
+                <target>Autor</target>
+            </trans-unit>
+            <trans-unit id="article.in">
+                <source>article.in</source>
+                <target>w kategorii</target>
+            </trans-unit>
+            <trans-unit id="article.on">
+                <source>article.on</source>
+                <target>dnia</target>
+            </trans-unit>
+            <trans-unit id="article.read_more">
+                <source>article.read_more</source>
+                <target>Czytaj więcej</target>
+            </trans-unit>
+            <trans-unit id="article.no_articles">
+                <source>article.no_articles</source>
+                <target>Nie znaleziono artykułów.</target>
+            </trans-unit>
+            <trans-unit id="article.no_articles_in_category">
+                <source>article.no_articles_in_category</source>
+                <target>Nie znaleziono artykułów w tej kategorii.</target>
+            </trans-unit>
+            <trans-unit id="article.no_categories">
+                <source>article.no_categories</source>
+                <target>Brak kategorii</target>
+            </trans-unit>
+            <trans-unit id="article.edit">
+                <source>article.edit</source>
+                <target>Edytuj</target>
+            </trans-unit>
+            <trans-unit id="article.delete">
+                <source>article.delete</source>
+                <target>Usuń</target>
+            </trans-unit>
+            <trans-unit id="comment.title">
+                <source>comment.title</source>
+                <target>Komentarze</target>
+            </trans-unit>
+            <trans-unit id="comment.no_comments">
+                <source>comment.no_comments</source>
+                <target>Brak komentarzy.</target>
+            </trans-unit>
+            <trans-unit id="comment.add">
+                <source>comment.add</source>
+                <target>Dodaj komentarz</target>
+            </trans-unit>
+            <trans-unit id="comment.submit">
+                <source>comment.submit</source>
+                <target>Wyślij</target>
+            </trans-unit>
+            <trans-unit id="comment.login_required">
+                <source>comment.login_required</source>
+                <target>Musisz być zalogowany, aby dodać komentarz.</target>
+            </trans-unit>
+            <trans-unit id="comment.admin_not_allowed">
+                <source>comment.admin_not_allowed</source>
+                <target>Administratorzy nie mogą dodawać komentarzy. Użyj zwykłego konta użytkownika, aby skomentować.</target>
+            </trans-unit>
+            <trans-unit id="comment.added_successfully">
+                <source>comment.added_successfully</source>
+                <target>Komentarz został dodany pomyślnie.</target>
+            </trans-unit>
+            <trans-unit id="comment.deleted_successfully">
+                <source>comment.deleted_successfully</source>
+                <target>Komentarz został usunięty pomyślnie.</target>
+            </trans-unit>
+            <trans-unit id="comment.error.adding_failed">
+                <source>comment.error.adding_failed</source>
+                <target>Wystąpił błąd podczas dodawania komentarza. Spróbuj ponownie.</target>
+            </trans-unit>
+            <trans-unit id="user.profile.updated_successfully">
+                <source>user.profile.updated_successfully</source>
+                <target>Profil został zaktualizowany pomyślnie.</target>
+            </trans-unit>
+            <trans-unit id="user.password.changed_successfully">
+                <source>user.password.changed_successfully</source>
+                <target>Hasło zostało zmienione pomyślnie.</target>
+            </trans-unit>
+            <trans-unit id="user.password.required">
+                <source>user.password.required</source>
+                <target>Hasło jest wymagane.</target>
+            </trans-unit>
+            <trans-unit id="article.not_found">
+                <source>article.not_found</source>
+                <target>Artykuł nie został znaleziony.</target>
+            </trans-unit>
+            <trans-unit id="navbar.register">
+                <source>navbar.register</source>
+                <target>Zarejestruj</target>
+            </trans-unit>
+            <trans-unit id="category.title.list">
+                <source>category.title.list</source>
+                <target>Kategorie</target>
+            </trans-unit>
+            <trans-unit id="pagination.navigation">
+                <source>pagination.navigation</source>
+                <target>Nawigacja stron</target>
+            </trans-unit>
+            <trans-unit id="article.new.title">
+                <source>article.new.title</source>
+                <target>Nowy artykuł</target>
+            </trans-unit>
+            <trans-unit id="article.title">
+                <source>article.title</source>
+                <target>Tytuł</target>
+            </trans-unit>
+            <trans-unit id="article.title.placeholder">
+                <source>article.title.placeholder</source>
+                <target>Wpisz tytuł artykułu</target>
+            </trans-unit>
+            <trans-unit id="article.content">
+                <source>article.content</source>
+                <target>Treść</target>
+            </trans-unit>
+            <trans-unit id="article.content.placeholder">
+                <source>article.content.placeholder</source>
+                <target>Wpisz treść artykułu</target>
+            </trans-unit>
+            <trans-unit id="article.categories">
+                <source>article.categories</source>
+                <target>Kategorie</target>
+            </trans-unit>
+            <trans-unit id="article.category">
+                <source>article.category</source>
+                <target>Kategoria</target>
+            </trans-unit>
+            <trans-unit id="article.create">
+                <source>article.create</source>
+                <target>Utwórz</target>
+            </trans-unit>
+            <trans-unit id="article.back_to_list">
+                <source>article.back_to_list</source>
+                <target>Powrót do listy</target>
+            </trans-unit>
+            <trans-unit id="user.profile">
+                <source>user.profile</source>
+                <target>Mój profil</target>
+            </trans-unit>
+            <trans-unit id="user.edit_profile">
+                <source>user.edit_profile</source>
+                <target>Edytuj profil</target>
+            </trans-unit>
+            <trans-unit id="user.change_password">
+                <source>user.change_password</source>
+                <target>Zmień hasło</target>
+            </trans-unit>
+            <trans-unit id="user.username">
+                <source>user.username</source>
+                <target>Nazwa użytkownika</target>
+            </trans-unit>
+            <trans-unit id="user.full_name">
+                <source>user.full_name</source>
+                <target>Imię i nazwisko</target>
+            </trans-unit>
+            <trans-unit id="user.email">
+                <source>user.email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="user.member_since">
+                <source>user.member_since</source>
+                <target>Członek od</target>
+            </trans-unit>
+            <trans-unit id="user.last_login">
+                <source>user.last_login</source>
+                <target>Ostatnie logowanie</target>
+            </trans-unit>
+            <trans-unit id="user.bio">
+                <source>user.bio</source>
+                <target>Bio</target>
+            </trans-unit>
+            <trans-unit id="user.activity">
+                <source>user.activity</source>
+                <target>Moja aktywność</target>
+            </trans-unit>
+            <trans-unit id="user.comments">
+                <source>user.comments</source>
+                <target>Komentarze</target>
+            </trans-unit>
+            <trans-unit id="user.status">
+                <source>user.status</source>
+                <target>Status</target>
+            </trans-unit>
+            <trans-unit id="user.active">
+                <source>user.active</source>
+                <target>Aktywny</target>
+            </trans-unit>
+            <trans-unit id="user.inactive">
+                <source>user.inactive</source>
+                <target>Nieaktywny</target>
+            </trans-unit>
+            <trans-unit id="user.save_changes">
+                <source>user.save_changes</source>
+                <target>Zapisz zmiany</target>
+            </trans-unit>
+            <trans-unit id="action.cancel">
+                <source>action.cancel</source>
+                <target>Anuluj</target>
+            </trans-unit>
+            <trans-unit id="user.username.placeholder">
+                <source>user.username.placeholder</source>
+                <target>Wpisz nazwę użytkownika</target>
+            </trans-unit>
+            <trans-unit id="user.username.help">
+                <source>user.username.help</source>
+                <target>Nazwa użytkownika musi mieć od 3 do 50 znaków i może zawierać tylko litery, cyfry i podkreślenia.</target>
+            </trans-unit>
+            <trans-unit id="user.email.placeholder">
+                <source>user.email.placeholder</source>
+                <target>Wpisz swój adres e-mail</target>
+            </trans-unit>
+            <trans-unit id="user.full_name.placeholder">
+                <source>user.full_name.placeholder</source>
+                <target>Wpisz swoje imię i nazwisko</target>
+            </trans-unit>
+            <trans-unit id="user.bio.placeholder">
+                <source>user.bio.placeholder</source>
+                <target>Napisz coś o sobie...</target>
+            </trans-unit>
+            <trans-unit id="category.articles">
+                <source>category.articles</source>
+                <target>artykułów</target>
+            </trans-unit>
+            <trans-unit id="category.no_categories">
+                <source>category.no_categories</source>
+                <target>Nie znaleziono kategorii.</target>
+            </trans-unit>
+            <trans-unit id="title.category_create">
+                <source>title.category_create</source>
+                <target>Utwórz kategorię</target>
+            </trans-unit>
+            <trans-unit id="title.category_edit">
+                <source>title.category_edit</source>
+                <target>Edytuj kategorię %id%</target>
+            </trans-unit>
+            <trans-unit id="title.category_delete">
+                <source>title.category_delete</source>
+                <target>Usuń kategorię %id%</target>
+            </trans-unit>
+            <trans-unit id="action.save">
+                <source>action.save</source>
+                <target>Zapisz</target>
+            </trans-unit>
+            <trans-unit id="action.delete">
+                <source>action.delete</source>
+                <target>Usuń</target>
+            </trans-unit>
+            <trans-unit id="action.back_to_list">
+                <source>action.back_to_list</source>
+                <target>Powrót do listy</target>
+            </trans-unit>
+            <trans-unit id="message.created_successfully">
+                <source>message.created_successfully</source>
+                <target>Kategoria została utworzona pomyślnie.</target>
+            </trans-unit>
+            <trans-unit id="message.edited_successfully">
+                <source>message.edited_successfully</source>
+                <target>Kategoria została edytowana pomyślnie.</target>
+            </trans-unit>
+            <trans-unit id="message.deleted_successfully">
+                <source>message.deleted_successfully</source>
+                <target>Kategoria została usunięta pomyślnie.</target>
+            </trans-unit>
+            <trans-unit id="label.title">
+                <source>label.title</source>
+                <target>Tytuł</target>
+            </trans-unit>
+            <trans-unit id="user.password">
+                <source>user.password</source>
+                <target>Hasło</target>
+            </trans-unit>
+            <trans-unit id="user.password.placeholder">
+                <source>user.password.placeholder</source>
+                <target>Wpisz swoje hasło</target>
+            </trans-unit>
+            <trans-unit id="user.password.help">
+                <source>user.password.help</source>
+                <target>Hasło musi mieć co najmniej 8 znaków i zawierać zarówno litery, jak i cyfry.</target>
+            </trans-unit>
+            <trans-unit id="user.password_confirm">
+                <source>user.password_confirm</source>
+                <target>Potwierdź hasło</target>
+            </trans-unit>
+            <trans-unit id="user.password_confirm.placeholder">
+                <source>user.password_confirm.placeholder</source>
+                <target>Potwierdź swoje hasło</target>
+            </trans-unit>
+            <trans-unit id="user.password.mismatch">
+                <source>user.password.mismatch</source>
+                <target>Pola hasła muszą być identyczne.</target>
+            </trans-unit>
+            <trans-unit id="validation.password.mismatch">
+                <source>validation.password.mismatch</source>
+                <target>Pola hasła muszą być identyczne.</target>
+            </trans-unit>
+            <trans-unit id="user.remember_me">
+                <source>user.remember_me</source>
+                <target>Zapamiętaj mnie</target>
+            </trans-unit>
+            <trans-unit id="user.new_password">
+                <source>user.new_password</source>
+                <target>Nowe hasło</target>
+            </trans-unit>
+            <trans-unit id="user.new_password.placeholder">
+                <source>user.new_password.placeholder</source>
+                <target>Wpisz swoje nowe hasło</target>
+            </trans-unit>
+            <trans-unit id="user.new_password_confirm">
+                <source>user.new_password_confirm</source>
+                <target>Potwierdź nowe hasło</target>
+            </trans-unit>
+            <trans-unit id="user.new_password_confirm.placeholder">
+                <source>user.new_password_confirm.placeholder</source>
+                <target>Potwierdź swoje nowe hasło</target>
+            </trans-unit>
+            <trans-unit id="comment.content">
+                <source>comment.content</source>
+                <target>Komentarz</target>
+            </trans-unit>
+            <trans-unit id="comment.content.placeholder">
+                <source>comment.content.placeholder</source>
+                <target>Wpisz swój komentarz</target>
+            </trans-unit>
+            <trans-unit id="user.register">
+                <source>user.register</source>
+                <target>Zarejestruj</target>
+            </trans-unit>
+            <trans-unit id="user.create_account">
+                <source>user.create_account</source>
+                <target>Utwórz konto</target>
+            </trans-unit>
+            <trans-unit id="user.already_have_account">
+                <source>user.already_have_account</source>
+                <target>Masz już konto?</target>
+            </trans-unit>
+            <trans-unit id="user.login_here">
+                <source>user.login_here</source>
+                <target>Zaloguj się tutaj</target>
+            </trans-unit>
+            <trans-unit id="user.login">
+                <source>user.login</source>
+                <target>Zaloguj</target>
+            </trans-unit>
+            <trans-unit id="user.no_account">
+                <source>user.no_account</source>
+                <target>Nie masz konta?</target>
+            </trans-unit>
+            <trans-unit id="user.register_here">
+                <source>user.register_here</source>
+                <target>Zarejestruj się tutaj</target>
+            </trans-unit>
+            <trans-unit id="category.slug">
+                <source>category.slug</source>
+                <target>Slug</target>
+            </trans-unit>
+            <trans-unit id="category.article_count">
+                <source>category.article_count</source>
+                <target>Liczba artykułów</target>
+            </trans-unit>
+            <trans-unit id="article.delete_confirm.title">
+                <source>article.delete_confirm.title</source>
+                <target>Potwierdź usunięcie</target>
+            </trans-unit>
+            <trans-unit id="article.delete_confirm.message">
+                <source>article.delete_confirm.message</source>
+                <target>Czy na pewno chcesz usunąć artykuł <g id="1">%title%</g>?</target>
+            </trans-unit>
+            <trans-unit id="article.delete_confirm.yes">
+                <source>article.delete_confirm.yes</source>
+                <target>Tak, usuń</target>
+            </trans-unit>
+            <trans-unit id="article.edit.title">
+                <source>article.edit.title</source>
+                <target>Edytuj artykuł</target>
+            </trans-unit>
+            <trans-unit id="article.edit.update">
+                <source>article.edit.update</source>
+                <target>Aktualizuj</target>
+            </trans-unit>
+            <trans-unit id="article.back_to_article">
+                <source>article.back_to_article</source>
+                <target>Powrót do artykułu</target>
+            </trans-unit>
+            <trans-unit id="footer.copyright">
+                <source>footer.copyright</source>
+                <target>Gazeta Internetowa. Wszelkie prawa zastrzeżone.</target>
+            </trans-unit>
+            <trans-unit id="article.deleted_successfully">
+                <source>article.deleted_successfully</source>
+                <target>Artykuł został pomyślnie usunięty.</target>
+            </trans-unit>
+            <trans-unit id="base.welcome">
+                <source>base.welcome</source>
+                <target>Witaj!</target>
+            </trans-unit>
+            <trans-unit id="base.site_name">
+                <source>base.site_name</source>
+                <target>Gazeta Internetowa</target>
+            </trans-unit>
+            <trans-unit id="comment.delete">
+                <source>comment.delete</source>
+                <target>Usuń</target>
+            </trans-unit>
+            <trans-unit id="article.created_successfully">
+                <source>article.created_successfully</source>
+                <target>Artykuł został pomyślnie utworzony.</target>
+            </trans-unit>
+            <trans-unit id="article.updated_successfully">
+                <source>article.updated_successfully</source>
+                <target>Artykuł został pomyślnie zaktualizowany.</target>
+            </trans-unit>
+            <trans-unit id="user.username.already_exists">
+                <source>user.username.already_exists</source>
+                <target>Nazwa użytkownika już istnieje.</target>
+            </trans-unit>
+            <trans-unit id="user.account.created_successfully">
+                <source>user.account.created_successfully</source>
+                <target>Konto zostało pomyślnie utworzone! Możesz się teraz zalogować.</target>
+            </trans-unit>
+            <trans-unit id="category.delete.warning">
+                <source>category.delete.warning</source>
+                <target>Ostrzeżenie</target>
+            </trans-unit>
+            <trans-unit id="category.delete.has_articles">
+                <source>category.delete.has_articles</source>
+                <target>Ta kategoria zawiera %count% artykuł(ów). Usunięcie kategorii spowoduje usunięcie przypisania kategorii z tych artykułów.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff> 

@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}View User{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0">User Profile</h2>
+                    <a href="{{ path('admin_users_list') }}" class="btn btn-secondary btn-sm">Back to Users</a>
+                </div>
+                <div class="card-body">
+                    <table class="table table-borderless">
+                        <tr>
+                            <th>ID:</th>
+                            <td>{{ user.id }}</td>
+                        </tr>
+                        <tr>
+                            <th>Username:</th>
+                            <td>{{ user.username }}</td>
+                        </tr>
+                        <tr>
+                            <th>Full Name:</th>
+                            <td>{{ user.name }}</td>
+                        </tr>
+                        <tr>
+                            <th>Email:</th>
+                            <td>{{ user.email }}</td>
+                        </tr>
+                        <tr>
+                            <th>Status:</th>
+                            <td>{{ user.isActive ? 'Active' : 'Inactive' }}</td>
+                        </tr>
+                        <tr>
+                            <th>Created At:</th>
+                            <td>{{ user.createdAt|date('F j, Y H:i') }}</td>
+                        </tr>
+                        <tr>
+                            <th>Bio:</th>
+                            <td>{{ user.bio|default('-') }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

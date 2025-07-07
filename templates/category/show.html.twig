@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ category.name }}{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <h1>{{ category.name }}</h1>
+    <p>{{ 'category.slug'|trans }}: {{ category.slug }}</p>
+    <p>{{ 'category.article_count'|trans }}: {{ category.articleCount ?? 0 }}</p>
+    <a href="{{ path('app_category_index') }}" class="btn btn-secondary">{{ 'action.back_to_list'|trans }}</a>
+</div>
+{% endblock %} 

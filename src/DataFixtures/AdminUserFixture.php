@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * AdminUserFixture.
+ *
+ * @author Konrad Stomski <konrad.stomski@student.uj.edu.pl>
+ *
+ * @copyright 2025 Konrad Stomski
+ *
+ * @license MIT
+ */
+
+declare(strict_types=1);
+
 namespace App\DataFixtures;
 
 use App\Entity\AdminUser;
@@ -7,26 +19,37 @@ use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
+/**
+ * Fixture for loading admin users.
+ */
 class AdminUserFixture extends Fixture
 {
-    private UserPasswordHasherInterface $passwordHasher;
-
-    public function __construct(UserPasswordHasherInterface $passwordHasher)
+    /**
+     * Constructor.
+     *
+     * @param UserPasswordHasherInterface $passwordHasher The password hasher service
+     */
+    public function __construct(private UserPasswordHasherInterface $passwordHasher)
     {
-        $this->passwordHasher = $passwordHasher;
     }
 
+    /**
+     * Load admin user fixtures.
+     *
+     * @param ObjectManager $manager The object manager
+     */
     public function load(ObjectManager $manager): void
     {
-        $admin = new AdminUser();
-        $admin->setEmail('admin@example.com');
-        $admin->setName('Administrator');
-        $admin->setRoles(['ROLE_ADMIN']);
-        $admin->setPassword(
-            $this->passwordHasher->hashPassword($admin, 'admin123')
-        );
+        // Clear existing admin users
+        $manager->getRepository(AdminUser::class)->createQueryBuilder('a')->delete()->getQuery()->execute();
 
-        $manager->persist($admin);
+        $adminUser = new AdminUser();
+        $adminUser->setEmail('admin@example.com');
+        $adminUser->setName('Admin User');
+        $adminUser->setPassword($this->passwordHasher->hashPassword($adminUser, 'admin123'));
+        $adminUser->setRoles(['ROLE_ADMIN']);
+        $manager->persist($adminUser);
+
         $manager->flush();
     }
 }

@@ -1,13 +1,246 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
     <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <meta charset="UTF-8">
-        <title>{% block title %}Gazeta Internetowa{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{{ 'base.welcome'|trans }}{% endblock %} - {{ 'base.site_name'|trans }}</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>📰</text></svg>">
+        <style>
+            /* Custom validation error styling */
+            .form-error {
+                color: #dc3545;
+                font-size: 0.875rem;
+                margin-top: 0.25rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                animation: fadeIn 0.3s ease-in;
+            }
+            
+            .form-error::before {
+                content: "⚠️";
+                font-size: 1rem;
+            }
+            
+            .form-control.is-invalid {
+                border-color: #dc3545;
+                box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+                animation: shake 0.5s ease-in-out;
+            }
+            
+            .form-control.is-invalid:focus {
+                border-color: #dc3545;
+                box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+            }
+            
+            /* Success message styling */
+            .alert-success {
+                background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+                border: 1px solid #c3e6cb;
+                color: #155724;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            
+            /* Error message styling */
+            .alert-danger {
+                background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+                border: 1px solid #f5c6cb;
+                color: #721c24;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            
+            /* Animations */
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(-10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            
+            @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                25% { transform: translateX(-5px); }
+                75% { transform: translateX(5px); }
+            }
+            
+            /* Form styling improvements */
+            .form-label {
+                font-weight: 500;
+                color: #495057;
+                margin-bottom: 0.5rem;
+            }
+            
+            .form-control:focus {
+                border-color: #80bdff;
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                transition: all 0.15s ease-in-out;
+            }
+            
+            /* Button improvements */
+            .btn-primary {
+                background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+                border: none;
+                transition: all 0.3s ease;
+            }
+            
+            .btn-primary:hover {
+                background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+                transform: translateY(-1px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+            
+            /* Category checkboxes styling */
+            .category-checkboxes {
+                display: flex;
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+            
+            .category-checkboxes .form-check {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin-bottom: 0.25rem;
+                padding: 0.5rem 0;
+                border: none;
+                background: none;
+            }
+            
+            .category-checkboxes .form-check-input {
+                margin-right: 0.5rem;
+                margin-top: 0;
+                flex-shrink: 0;
+            }
+            
+            .category-checkboxes .form-check-label {
+                margin-bottom: 0;
+                cursor: pointer;
+                flex: 1;
+            }
+            
+            .category-checkboxes .form-check:hover {
+                background-color: #e9ecef;
+                border-color: #dee2e6;
+                transform: translateY(-1px);
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            
+            .category-checkboxes .form-check-input:checked + .form-check-label {
+                font-weight: 600;
+                color: #007bff;
+            }
+            
+            .category-checkboxes .form-check-input:checked ~ .form-check {
+                background-color: #e7f3ff;
+                border-color: #007bff;
+            }
+        </style>
+        {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        <main>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="{{ path('app_article_index') }}">{{ 'navbar.brand'|trans }}</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_article_index') }}">{{ 'navbar.articles'|trans }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_category_index') }}">{{ 'navbar.categories'|trans }}</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item me-2">
+                            <a class="nav-link {% if app.request.locale == 'pl' %}fw-bold text-warning{% endif %}"
+                               href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'pl'})) }}">
+                                PL
+                            </a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link {% if app.request.locale == 'en' %}fw-bold text-warning{% endif %}"
+                               href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'en'})) }}">
+                                EN
+                            </a>
+                        </li>
+                        
+                        {% if is_granted('ROLE_ADMIN') %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ path('app_article_new') }}">{{ 'navbar.new_article'|trans }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ path('app_category_new') }}">{{ 'navbar.new_category'|trans }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ path('admin_dashboard') }}">{{ 'admin.panel'|trans({}, 'admin') }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <form action="{{ path('app_user_logout') }}" method="post" style="display:inline; margin:0; padding:0;">
+                                    <input type="hidden" name="_csrf_token" value="{{ csrf_token('logout') }}">
+                                    <button type="submit" class="btn btn-link nav-link" style="display:inline; padding:0;">{{ 'navbar.logout'|trans }}</button>
+                                </form>
+                            </li>
+                        {% elseif is_granted('ROLE_USER') %}
+                            <li class="nav-item dropdown">
+                                <a class="nav-link d-flex align-items-center dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="bg-secondary rounded-circle d-flex align-items-center justify-content-center me-2" style="width: 24px; height: 24px;">
+                                        <span class="text-white small">{{ app.user.name|first|upper }}</span>
+                                    </div>
+                                    {{ app.user.username }}
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                                    <li><a class="dropdown-item" href="{{ path('app_user_profile') }}">{{ 'user.profile'|trans }}</a></li>
+                                    <li><a class="dropdown-item" href="{{ path('app_user_profile_edit') }}">{{ 'user.edit_profile'|trans }}</a></li>
+                                    <li><a class="dropdown-item" href="{{ path('app_user_change_password') }}">{{ 'user.change_password'|trans }}</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <form action="{{ path('app_user_logout') }}" method="post" style="display:inline; margin:0; padding:0;">
+                                            <input type="hidden" name="_csrf_token" value="{{ csrf_token('logout') }}">
+                                            <button type="submit" class="dropdown-item">{{ 'navbar.logout'|trans }}</button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        {% else %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ path('app_user_register') }}">{{ 'navbar.register'|trans }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ path('app_user_login') }}">{{ 'navbar.login'|trans }}</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        {% for label, messages in app.flashes %}
+            {% for message in messages %}
+                <div class="alert alert-{{ label }} alert-dismissible fade show" role="alert">
+                    {{ message|trans({}, 'messages') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+        {% endfor %}
+
         {% block body %}{% endblock %}
-    </main>
+
+        <footer class="bg-light py-4 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; {{ "now"|date("Y") }} {{ 'footer.copyright'|trans }}</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        {% block javascripts %}{% endblock %}
     </body>
 </html>
