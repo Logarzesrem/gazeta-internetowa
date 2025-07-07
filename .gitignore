@@ -6,4 +6,5 @@
 .env.*.local
 .phpunit.result.cache
 .php-cs-fixer.cache
+/bin/phpunit
 ###< symfony/framework-bundle ###

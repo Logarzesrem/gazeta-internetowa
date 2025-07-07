@@ -38,6 +38,12 @@ php bin/console doctrine:fixtures:load --no-interaction
 echo "🧹 Clearing cache..."
 php bin/console cache:clear
 
+if [ ! -f bin/phpunit ]; then
+    echo "🔗 Creating symlink: bin/phpunit → vendor/bin/phpunit"
+    ln -s ../vendor/bin/phpunit bin/phpunit
+    chmod +x vendor/bin/phpunit
+fi
+
 echo "✅ Setup complete!"
 echo ""
 echo "🎉 Your application is ready!"
